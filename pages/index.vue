@@ -221,7 +221,7 @@ onMounted(() => {
             trigger: '.why-vsqaure',
         }
     })
-        .fromTo('.why-small', { opacity: '1', y: '00' }, { opacity: '1', y: '-600' });
+        .fromTo('.why-small', { opacity: '1', y: '200' }, { opacity: '1', y: '-600' });
 
 
 
