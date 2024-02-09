@@ -28,14 +28,14 @@ onMounted(() => {
 
 
     //====animatie 3======
-    gsap.timeline({
+    let tl4 = gsap.timeline({
         scrollTrigger: {
             // markers: true,
             start: 'top 95%',
             trigger: ".animatie-3",
         }
     })
-        .fromTo('.card', { opacity: '0', y: '60' }, { opacity: '1', y: '0', stagger: 0.2, duration: 1.3 });
+        tl4.fromTo('.card', { opacity: '0', y: '60' }, { opacity: '1', y: '0', stagger: 0.2, duration: 1.3 });
 
 })
 </script>
