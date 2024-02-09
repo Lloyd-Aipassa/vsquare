@@ -200,42 +200,42 @@ gsap.registerPlugin(ScrollTrigger);
 
 
 
-onMounted(() => {
+// onMounted(() => {
 
-    //====animatie WHY V-SQUARE======
-    let tl2 = gsap.timeline({
-        scrollTrigger: {
-            markers: false,
-            start: 'top bottom',
-            scrub: true,
-            trigger: '.why-vsqaure',
-        }
-    })
-    tl2.fromTo('.why-big', { opacity: '1', y: '600' }, { opacity: '1', y: '-600' });
+//     //====animatie WHY V-SQUARE======
+//     let tl2 = gsap.timeline({
+//         scrollTrigger: {
+//             markers: false,
+//             start: 'top bottom',
+//             scrub: true,
+//             trigger: '.why-vsqaure',
+//         }
+//     })
+//     tl2.fromTo('.why-big', { opacity: '1', y: '600' }, { opacity: '1', y: '-600' });
 
-    let tl2Mob = gsap.timeline({
-        scrollTrigger: {
-            markers: true,
-            start: '-1000 bottom',
-            scrub: true,
-            trigger: '.why-vsqaure',
-        }
-    })
-    tl2Mob.fromTo('.why-small', { opacity: '1', x: '100%' }, { opacity: '1', x: '-100%' });
+//     let tl2Mob = gsap.timeline({
+//         scrollTrigger: {
+//             markers: true,
+//             start: '-1000 bottom',
+//             scrub: true,
+//             trigger: '.why-vsqaure',
+//         }
+//     })
+//     tl2Mob.fromTo('.why-small', { opacity: '1', x: '100%' }, { opacity: '1', x: '-100%' });
 
 
 
-    // ====animatie in bos achtergrond Woorden======
-    let tl3 = gsap.timeline({
-        scrollTrigger: {
-            // markers: true,
-            start: 'top 95%',
-            trigger: '.woods',
-        }
-    })
-        tl3.fromTo('.animate-words', { opacity: '0', y: '100' }, { opacity: '1', y: '0', stagger: 0.3, duration: 1.3 });
+//     // ====animatie in bos achtergrond Woorden======
+//     let tl3 = gsap.timeline({
+//         scrollTrigger: {
+//             // markers: true,
+//             start: 'top 95%',
+//             trigger: '.woods',
+//         }
+//     })
+//         tl3.fromTo('.animate-words', { opacity: '0', y: '100' }, { opacity: '1', y: '0', stagger: 0.3, duration: 1.3 });
 
-})
+// })
 
 </script>
 
