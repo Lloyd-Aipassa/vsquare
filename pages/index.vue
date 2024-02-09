@@ -221,7 +221,7 @@ onMounted(() => {
             trigger: '.why-vsqaure',
         }
     })
-        .fromTo('.why-small', { opacity: '1', y: '0' }, { opacity: '1', y: '-600' });
+        .fromTo('.why-small', { opacity: '1', x: '-500' }, { opacity: '1', x: '0' });
 
 
 
@@ -552,7 +552,7 @@ p.sc-sub-title-bottom-text {
 
     .why-vsqaure-container {
         position: relative;
-        padding: 324px 24px 24px;
+        padding: 400px 24px 24px;
         background: linear-gradient(266.72deg, #778171 0%, #8EA680 99.03%);
         overflow-y: clip;
         overflow-x: visible;
@@ -580,7 +580,7 @@ p.sc-sub-title-bottom-text {
 
     .why-vsqaure-container img.why-groente {
         position: absolute;
-        top: 400px;
+        top: 0;
         right: 0;
         width: 100%;
     }
