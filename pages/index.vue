@@ -211,19 +211,21 @@ onMounted(() => {
             trigger: '.why-vsqaure',
         }
     })
-        .fromTo('.why-groente', { opacity: '1', y: '200' }, { opacity: '1', y: '-600' });
-        
-    // gsap.timeline({
-    //     scrollTrigger: {
-    //         markers: true,
-    //         start: 'top bottom',
-    //         scrub: true,
-    //         trigger: '.why-groente',
-    //     }
-    // })
-    //     .fromTo('.why-groente', { opacity: '1', y: '200' }, { opacity: '1', y: '-600' });
+        .fromTo('.why-groente', { opacity: '1', y: '600' }, { opacity: '1', y: '-600' });
 
-    //====animatie in bos achtergrond Woorden======
+    gsap.timeline({
+        scrollTrigger: {
+            markers: true,
+            start: 'top 150%',
+            scrub: true,
+            trigger: '.why-groente',
+        }
+    })
+        .fromTo('.why-small', { opacity: '1', y: '00' }, { opacity: '1', y: '-600' });
+
+
+
+    // ====animatie in bos achtergrond Woorden======
     gsap.timeline({
         scrollTrigger: {
             // markers: true,
@@ -550,7 +552,7 @@ p.sc-sub-title-bottom-text {
 
     .why-vsqaure-container {
         position: relative;
-        padding: 24px 24px 24px;
+        padding: 324px 24px 24px;
         background: linear-gradient(266.72deg, #778171 0%, #8EA680 99.03%);
         overflow-y: clip;
         overflow-x: visible;
@@ -577,7 +579,7 @@ p.sc-sub-title-bottom-text {
 
 
     .why-vsqaure-container img.why-groente {
-        position: relative;
+        position: absolute;
         top: 0;
         right: 0;
         width: 100%;
