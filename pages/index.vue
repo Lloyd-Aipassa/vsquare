@@ -210,7 +210,7 @@ onMounted(() => {
             trigger: '.why-groente',
         }
     })
-        .fromTo('.why-groente', { opacity: '1', y: '0' }, { opacity: '1', y: '-600' });
+        .fromTo('.why-groente', { opacity: '1', y: '200' }, { opacity: '1', y: '-600' });
 
     //====animatie in bos achtergrond Woorden======
     gsap.timeline({
@@ -523,6 +523,11 @@ p.sc-sub-title-bottom-text {
 
 @media screen and (max-width: 720px) {
 
+    .vegitalian {
+    background-image: url("/vegitalian/vegitalian-pizzabar.webp");
+    padding: 24px;
+}
+
 
     /************** WHY V-SQUARE SECTION ************/
 
@@ -532,10 +537,12 @@ p.sc-sub-title-bottom-text {
 
     .why-vsqaure-container {
         position: relative;
-        padding: 424px 24px 24px;
+        padding: 24px 24px 24px;
         background: linear-gradient(266.72deg, #778171 0%, #8EA680 99.03%);
         overflow-y: clip;
         overflow-x: visible;
+        display: flex;
+        flex-direction: column-reverse;
     }
 
 
@@ -551,7 +558,7 @@ p.sc-sub-title-bottom-text {
 
 
     .why-vsqaure-container img.why-groente {
-        position: absolute;
+        position: relative;
         top: 0;
         right: 0;
         width: 100%;
