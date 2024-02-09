@@ -210,7 +210,7 @@ onMounted(() => {
             trigger: '.why-groente',
         }
     })
-        .fromTo('.why-groente', { opacity: '1', y: '200' }, { opacity: '1', y: '-600' });
+        .fromTo('.why-groente', { opacity: '1', y: '0' }, { opacity: '1', y: '-600' });
 
     //====animatie in bos achtergrond Woorden======
     gsap.timeline({
