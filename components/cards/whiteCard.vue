@@ -13,31 +13,32 @@
 </template>
 
 <script setup>
-// const props = defineProps({
-//     ButtonTekst: String,
-//     Link: String,
-// })
+const props = defineProps({
+    ButtonTekst: String,
+    Link: String,
+})
 
-// import { gsap } from "gsap";
-// import { ScrollTrigger } from "gsap/ScrollTrigger";
-// gsap.registerPlugin(ScrollTrigger);
-
-
-
-// onMounted(() => {
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
 
 
-//     //====animatie 3======
-//     let tl4 = gsap.timeline({
-//         scrollTrigger: {
-//             markers: true,
-//             // start: 'top bottom',
-//             trigger: ".animatie-3",
-//         }
-//     })
-//         tl4.fromTo('.card', { opacity: '0', y: '60' }, { opacity: '1', y: '0', stagger: 0.2, duration: 1.3 });
 
-// })
+onMounted(() => {
+
+
+    //====animatie 3======
+    let tl4 = gsap.timeline({
+        scrollTrigger: {
+            markers: true,
+            // start: 'top bottom',
+            trigger: ".animatie-3",
+        }
+    })
+        tl4.fromTo('.card', { opacity: '0', y: '60' }, { opacity: '1', y: '0', stagger: 0.2, duration: 1.3 });
+        tl4.scrollTrigger.refresh();
+
+})
 </script>
 
 <style scoped>
