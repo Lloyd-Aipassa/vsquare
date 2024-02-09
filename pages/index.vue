@@ -216,7 +216,7 @@ onMounted(() => {
     gsap.timeline({
         scrollTrigger: {
             markers: true,
-            start: 'top 150%',
+            start: 'top 250%',
             scrub: true,
             trigger: '.why-vsqaure',
         }
