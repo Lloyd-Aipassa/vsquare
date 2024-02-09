@@ -1,6 +1,6 @@
 <template>
     <div class="partnercard" v-for="(content, index) in Partner" :key="index">
-        <img :src="content.ImageBig" alt="">
+        <img :src="content.ImageBig" class="img-big" alt="">
         <img :src="content.ImageSmall" class="img-small" alt="">
         <p> {{ content.p }}</p>
     </div>
@@ -48,5 +48,11 @@ onMounted(() => {
 
 .partnercard img.img-small {
     margin: 24px 0;
+}
+
+@media screen and (max-width: 720px) {
+    .partnercard img.img-big {
+        width: 100%;
+    }
 }
 </style>

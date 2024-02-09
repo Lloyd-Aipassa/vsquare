@@ -87,4 +87,13 @@ li a {
     line-height: 34px;
     color: var(--color-green);
 }
+
+@media screen and (max-width: 720px) {
+    .footer-top {
+        padding: 50px;
+        flex-direction: column;
+        text-align: center;
+        gap: 50px;
+    }
+}
 </style>
