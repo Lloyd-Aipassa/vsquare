@@ -30,8 +30,8 @@ onMounted(() => {
     //====animatie 3======
     let tl4 = gsap.timeline({
         scrollTrigger: {
-            // markers: true,
-            start: 'top 95%',
+            markers: true,
+            start: 'top bottom',
             trigger: ".animatie-3",
         }
     })
