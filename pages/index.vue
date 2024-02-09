@@ -211,17 +211,17 @@ onMounted(() => {
             trigger: '.why-vsqaure',
         }
     })
-    tl2.fromTo('.why-big', { opacity: '1', y: '600' }, { opacity: '1', y: '-600' });
+    tl2.fromTo('.why-big', { opacity: '1', y: '200' }, { opacity: '1', y: '-600' });
 
     let tl2Mob = gsap.timeline({
         scrollTrigger: {
             markers: true,
-            start: '-1000 bottom',
+            start: 'top bottom',
             scrub: true,
             trigger: '.why-vsqaure',
         }
     })
-    tl2Mob.fromTo('.why-small', { opacity: '1', x: '100%' }, { opacity: '1', x: '-100%' });
+    tl2Mob.fromTo('.why-small', { opacity: '1', x: '100%' }, { opacity: '1', x: '0' });
 
 
 
