@@ -215,7 +215,7 @@ onMounted(() => {
 
     let tl2Mob = gsap.timeline({
         scrollTrigger: {
-            markers: true,
+            markers: false,
             start: 'top bottom',
             scrub: true,
             trigger: '.why-vsqaure',
