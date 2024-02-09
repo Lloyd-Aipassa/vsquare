@@ -204,8 +204,8 @@ onMounted(() => {
     //====animatie WHY V-SQUARE======
     gsap.timeline({
         scrollTrigger: {
-            // markers: true,
-            start: 'top 95%',
+            markers: true,
+            start: 'top bottom',
             scrub: true,
             trigger: '.why-groente',
         }
@@ -543,7 +543,7 @@ p.sc-sub-title-bottom-text {
         gap: 24px;
     }
 
-    
+
 
     /* .why-vsqaure-img-text-container img {
         width: 30px;
