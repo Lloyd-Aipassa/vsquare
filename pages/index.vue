@@ -39,7 +39,8 @@
                         <p>With capacity that can be used flexible in accordance with the needs of the company</p>
                     </div>
                 </div>
-                <img class="why-groente" src="/home/whyVsquare/tangerine.webp" alt="groente">
+                <img class="why-groente why-big" src="/home/whyVsquare/tangerine.webp" alt="groente">
+                <img class="why-groente why-small" src="/home/whyVsquare/tangerine.webp" alt="groente">
             </div>
         </section>
         <section id="team">
@@ -207,10 +208,20 @@ onMounted(() => {
             markers: true,
             start: 'top bottom',
             scrub: true,
-            trigger: '.why-groente',
+            trigger: '.why-vsqaure',
         }
     })
         .fromTo('.why-groente', { opacity: '1', y: '200' }, { opacity: '1', y: '-600' });
+        
+    // gsap.timeline({
+    //     scrollTrigger: {
+    //         markers: true,
+    //         start: 'top bottom',
+    //         scrub: true,
+    //         trigger: '.why-groente',
+    //     }
+    // })
+    //     .fromTo('.why-groente', { opacity: '1', y: '200' }, { opacity: '1', y: '-600' });
 
     //====animatie in bos achtergrond Woorden======
     gsap.timeline({
@@ -275,7 +286,9 @@ onMounted(() => {
     right: 0;
 }
 
-
+.why-small {
+    display: none;
+}
 
 .why-vsqaure-container h2,
 .why-vsqaure-container p {
@@ -524,9 +537,9 @@ p.sc-sub-title-bottom-text {
 @media screen and (max-width: 720px) {
 
     .vegitalian {
-    background-image: url("/vegitalian/vegitalian-pizzabar.webp");
-    padding: 24px;
-}
+        background-image: url("/vegitalian/vegitalian-pizzabar.webp");
+        padding: 24px;
+    }
 
 
     /************** WHY V-SQUARE SECTION ************/
@@ -550,7 +563,13 @@ p.sc-sub-title-bottom-text {
         gap: 24px;
     }
 
+    .why-small {
+        display: block;
+    }
 
+    .why-big {
+        display: none;
+    }
 
     /* .why-vsqaure-img-text-container img {
         width: 30px;
