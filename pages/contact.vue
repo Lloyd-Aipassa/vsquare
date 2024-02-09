@@ -100,7 +100,7 @@ h1 {
     background-color: #87B16D1A;
 }
 
-.contact-container{
+.contact-container {
     display: flex;
     gap: 20px;
 }
@@ -276,40 +276,34 @@ form input[type="submit"]:active {
 
 
 @media screen and (max-width: 720px) {
-    .hero-orange-top {
-        display: none;
+
+    #contact {
+        margin: 0 auto 50px;
+        margin: 0;
+        padding: 0;
+        background-color: #87B16D1A;
+        flex-direction: column;
     }
 
-    .hero-orange-top-mob {
-        display: block;
-        position: absolute;
-        top: 50px;
-        right: 0;
-        width: 74vw;
-    }
-
-    .hero-orange-left {
-        position: absolute;
-        top: 750px;
-        left: 0;
-        width: 40vw;
+    .contact-container {
+        margin: 0 auto 50px;
+        width: calc(100% - 48px);
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
     }
 
 
-    #title h1 {
+    h1 {
         font-size: 31px;
         font-weight: 900;
         line-height: 110%;
         max-width: 390px;
+        margin-left: 24px;
     }
 
 
-    #contact {
-        width: 90%;
-        margin: 0 auto 50px;
-        flex-direction: column;
-        gap: 20px;
-    }
+
 
     .form {
         width: 100%;

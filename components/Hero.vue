@@ -5,7 +5,9 @@
             <h1 id="healthy">{{ content.Title }}</h1>
             <p v-html="content.p"></p>
         </div>
-        <ButtonsMainButton :ButtonTekst="ButtonTekst" :Link="Link" />
+        <div class="animatie-2">
+            <ButtonsMainButton :ButtonTekst="ButtonTekst" :Link="Link" />
+        </div>
     </section>
 </template>
 
@@ -22,7 +24,7 @@ let tl = gsap.timeline();
 onMounted(() => {
 
     tl.to('.animate-right-left', { clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0 100%)' })
-        .to('.animatie-2', { clipPath: 'polygon(100% 0, 0 0, 0 100%, 100% 100%)', duration: 0.5, delay: 0.7 })
+        .to('.animatie-2', { clipPath: 'polygon(100% 0, 0 0, 0 100%, 100% 100%)', duration: 0.5, delay: 0.7, stagger: 1.5 })
 })
 </script>
 
@@ -53,6 +55,12 @@ onMounted(() => {
 
 .hero img {
     width: 100%;
+}
+
+@media screen and (max-width: 720px) {
+    .hero {
+        padding: 0;
+    }
 }
 </style>
 

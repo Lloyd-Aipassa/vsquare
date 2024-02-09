@@ -15,9 +15,9 @@
                         </NuxtLink>
 
                     </li>
-            
+
                     <li>
-                        <NuxtLink to="/contact">
+                        <NuxtLink to="/vegitalian-project">
                             <p>
                                 Vegitalian Project
                             </p>
@@ -88,11 +88,19 @@
                                         </li>
                                     </NuxtLink>
 
+                                    <NuxtLink to="/vegitalian-project" @click="Close">
+                                        <li>
+                                            <p>
+                                                Vegitalian Project
+                                            </p>
+                                        </li>
+                                    </NuxtLink>
+
                                 </div>
                             </Transition>
-                   
+
                         </ul>
-                        <div class="elipse">
+                        <!-- <div class="elipse">
                             <svg class="el" viewBox="0 0 373 185" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <circle cx="105" cy="344" r="344" transform="rotate(90 105 344)" fill="#F89A03"
                                     fill-opacity="0.1" />
@@ -190,7 +198,7 @@
                                     </a>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                 </Transition>
             </nav>
@@ -307,7 +315,7 @@ p:hover p {
 }
 
 
-/********* Mobiel **************/
+
 
 .nav-mobile {
     display: none;
@@ -349,6 +357,9 @@ p:hover p {
         font-size: 14px;
     }
 }
+
+
+/********* Mobiel **************/
 
 @media screen and (max-width: 720px) {
     header {

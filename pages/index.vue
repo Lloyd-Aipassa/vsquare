@@ -514,7 +514,49 @@ p.sc-sub-title-bottom-text {
 #contact-block img {
     margin-left: -154px;
 }
+
 #contact-block .contact-block-container {
     align-self: center;
+}
+
+/************** Mobile ************/
+
+@media screen and (max-width: 720px) {
+
+
+    /************** WHY V-SQUARE SECTION ************/
+
+    .why-vsqaure {
+        padding: 0;
+    }
+
+    .why-vsqaure-container {
+        position: relative;
+        padding: 424px 24px 24px;
+        background: linear-gradient(266.72deg, #778171 0%, #8EA680 99.03%);
+        overflow-y: clip;
+        overflow-x: visible;
+    }
+
+
+    .why-vsqaure-img-text-container {
+        gap: 24px;
+    }
+
+
+
+    /* .why-vsqaure-img-text-container img {
+        width: 30px;
+    } */
+
+
+    .why-vsqaure-container img.why-groente {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+    }
+
+
 }
 </style>
