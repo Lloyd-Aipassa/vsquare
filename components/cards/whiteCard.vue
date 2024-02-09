@@ -31,7 +31,7 @@ onMounted(() => {
     let tl4 = gsap.timeline({
         scrollTrigger: {
             markers: true,
-            start: '-400 bottom',
+            start: '-200 bottom',
             trigger: ".card",
         }
     })
