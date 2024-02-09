@@ -31,6 +31,7 @@ onMounted(() => {
 <style scoped>
 .hero {
     padding: 18px 0 80px 200px;
+    height: 100vh;
 }
 
 .animate-right-left {
