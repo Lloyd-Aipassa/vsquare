@@ -216,12 +216,12 @@ onMounted(() => {
     gsap.timeline({
         scrollTrigger: {
             markers: true,
-            start: 'top 250%',
+            start: '-500 100',
             scrub: true,
             trigger: '.why-vsqaure',
         }
     })
-        .fromTo('.why-small', { opacity: '1', x: '-500' }, { opacity: '1', x: '0' });
+        .fromTo('.why-small', { opacity: '1', x: '100%' }, { opacity: '1', x: '-100%' });
 
 
 
@@ -582,7 +582,7 @@ p.sc-sub-title-bottom-text {
         position: absolute;
         top: 0;
         right: 0;
-        width: 100%;
+        width: 300px;
     }
 
 
