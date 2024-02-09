@@ -16,7 +16,11 @@ const props = defineProps({
     HeroContent: Array,
 })
 
-import gsap from 'gsap'
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+gsap.registerPlugin(ScrollTrigger)
+
+
 let tl = gsap.timeline();
 
 onMounted(() => {

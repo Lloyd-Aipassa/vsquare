@@ -27,7 +27,7 @@
                 </NuxtLink>
             </li>
             <li>
-                <NuxtLink to="/vegitalian-project">
+                <NuxtLink to="/contact">
                     Vegitalian
                 </NuxtLink>
             </li>
