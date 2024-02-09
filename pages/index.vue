@@ -554,8 +554,8 @@ p.sc-sub-title-bottom-text {
         position: relative;
         padding: 400px 24px 24px;
         background: linear-gradient(266.72deg, #778171 0%, #8EA680 99.03%);
-        overflow-y: clip;
-        overflow-x: visible;
+        overflow-x: clip;
+        overflow-y: visible;
         display: flex;
         flex-direction: column-reverse;
     }
