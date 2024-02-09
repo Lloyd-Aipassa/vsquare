@@ -32,7 +32,7 @@ onMounted(() => {
         scrollTrigger: {
             markers: true,
             // start: 'top bottom',
-            trigger: ".animatie-3",
+            trigger: ".card",
         }
     })
         tl4.fromTo('.card', { opacity: '0', y: '60' }, { opacity: '1', y: '0', stagger: 0.2, duration: 1.3 });
