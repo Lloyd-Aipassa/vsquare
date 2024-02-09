@@ -221,7 +221,7 @@ onMounted(() => {
             trigger: '.why-vsqaure',
         }
     })
-        .fromTo('.why-small', { opacity: '1', y: '200' }, { opacity: '1', y: '-600' });
+        .fromTo('.why-small', { opacity: '1', y: '0' }, { opacity: '1', y: '-600' });
 
 
 
@@ -580,7 +580,7 @@ p.sc-sub-title-bottom-text {
 
     .why-vsqaure-container img.why-groente {
         position: absolute;
-        top: 0;
+        top: 400px;
         right: 0;
         width: 100%;
     }
