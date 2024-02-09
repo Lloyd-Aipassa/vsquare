@@ -211,17 +211,17 @@ onMounted(() => {
             trigger: '.why-vsqaure',
         }
     })
-        .fromTo('.why-groente', { opacity: '1', y: '600' }, { opacity: '1', y: '-600' });
+        .fromTo('.why-big', { opacity: '1', y: '600' }, { opacity: '1', y: '-600' });
 
     gsap.timeline({
         scrollTrigger: {
             markers: true,
             start: 'top 150%',
             scrub: true,
-            trigger: '.why-groente',
+            trigger: '.why-vsqaure',
         }
     })
-        .fromTo('.why-small', { opacity: '1', y: '00' }, { opacity: '1', y: '-600' });
+        .fromTo('.why-small', { opacity: '1', y: '00' }, { opacity: '1', y: '-100' });
 
 
 
