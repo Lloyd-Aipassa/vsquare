@@ -202,15 +202,15 @@ gsap.registerPlugin(ScrollTrigger);
 onMounted(() => {
 
     //====animatie WHY V-SQUARE======
-    gsap.timeline({
-        scrollTrigger: {
-            // markers: true,
-            start: 'top 95%',
-            scrub: true,
-            trigger: '.why-groente',
-        }
-    })
-        .fromTo('.why-groente', { opacity: '1', y: '200' }, { opacity: '1', y: '-600' });
+    // gsap.timeline({
+    //     scrollTrigger: {
+    //         // markers: true,
+    //         start: 'top 95%',
+    //         scrub: true,
+    //         trigger: '.why-groente',
+    //     }
+    // })
+    //     .fromTo('.why-groente', { opacity: '1', y: '200' }, { opacity: '1', y: '-600' });
 
     //====animatie in bos achtergrond Woorden======
     gsap.timeline({
