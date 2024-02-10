@@ -1,12 +1,14 @@
 <template>
     <section class="hero" v-for="(content, index) in HeroContent" :key="index">
         <img :src="content.Image" alt="Header imges of vegan food" class="animate-right-left">
-        <div class="hero-content animatie-2">
-            <h1 id="healthy">{{ content.Title }}</h1>
-            <p v-html="content.p"></p>
-        </div>
-        <div class="animatie-2">
-            <ButtonsMainButton :ButtonTekst="ButtonTekst" :Link="Link" />
+        <div class="hero-contant-container">
+            <div class="hero-content animatie-2">
+                <h1 id="healthy">{{ content.Title }}</h1>
+                <p v-html="content.p"></p>
+            </div>
+            <div class="animatie-2">
+                <ButtonsMainButton :ButtonTekst="ButtonTekst" :Link="Link" />
+            </div>
         </div>
     </section>
 </template>
@@ -74,15 +76,17 @@ li {
     .hero {
         padding: 0;
     }
+    hero-contant-container{
+        width: calc(100%-48px);
+        margin: 0 auto;
+    }
 
     .hero h1 {
-        width: calc(100% - 24px);
         max-width: 1300px;
         margin-top: 40px;
     }
 
     .hero p {
-        width: calc(100% - 24px);
         margin: 24px 0;
     }
 
