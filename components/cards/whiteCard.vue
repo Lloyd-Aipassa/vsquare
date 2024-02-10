@@ -35,8 +35,8 @@ onMounted(() => {
             trigger: ".card",
         }
     })
-        tl4.fromTo('.card', { opacity: '0', y: '60' }, { opacity: '1', y: '0', stagger: 0.2, duration: 1.3 });
-        tl4.scrollTrigger.refresh();
+    tl4.fromTo('.card', { opacity: '0', y: '60' }, { opacity: '1', y: '0', stagger: 0.2, duration: 1.3 });
+    tl4.scrollTrigger.refresh();
 
 })
 </script>
@@ -57,5 +57,19 @@ onMounted(() => {
     padding: 0 0 16px 0;
     font-size: 18px;
     font-weight: 500;
+}
+
+@media screen and (max-width: 720px) {
+    .card {
+        padding: 24px;
+    }
+
+    .card h2 {
+     margin-bottom: -9px;
+    }
+
+    .card p {
+        margin: 24px 0;
+    }
 }
 </style>
