@@ -201,22 +201,23 @@ gsap.registerPlugin(ScrollTrigger);
 
 
 onMounted(() => {
-
     //====animatie WHY V-SQUARE======
     let tl2 = gsap.timeline({
         scrollTrigger: {
             markers: false,
-            start: 'top bottom',
+            start: 'bottom top',
             scrub: true,
             trigger: '.why-vsqaure',
         }
     })
     tl2.fromTo('.why-big', { opacity: '1', y: '200' }, { opacity: '1', y: '-600' });
 
+
     let tl2Mob = gsap.timeline({
         scrollTrigger: {
-            markers: false,
-            start: 'top bottom',
+            markers: true,
+            start: 'top 900',
+            // end: 'center',
             scrub: true,
             trigger: '.why-vsqaure',
         }
@@ -621,11 +622,16 @@ p.sc-sub-title-bottom-text {
 
     .why-small {
         display: block;
+        position: absolute;
+        top: 0;
+        left: 24px;
     }
 
     .why-big {
         display: none;
     }
+
+
 
     /* .why-vsqaure-img-text-container img {
         width: 30px;
