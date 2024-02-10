@@ -627,6 +627,12 @@ p.sc-sub-title-bottom-text {
         left: 24px;
     }
 
+    .why-vsqaure-container img.why-groente {
+        position: absolute;
+        top: 250px;
+        right: -30px;
+    }
+
     .why-big {
         display: none;
     }
@@ -642,7 +648,7 @@ p.sc-sub-title-bottom-text {
         position: absolute;
         top: 0;
         right: 0;
-        width: 300px;
+        width: 342px;
     }
 
     /* TEAM */
