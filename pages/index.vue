@@ -646,7 +646,7 @@ p.sc-sub-title-bottom-text {
 
     .why-vsqaure-container img.why-groente {
         position: absolute;
-        top: 0;
+        top: -20px;
         right: 0;
         width: 342px;
     }
