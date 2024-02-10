@@ -217,7 +217,7 @@ onMounted(() => {
         scrollTrigger: {
             markers: true,
             start: 'top 900',
-            // end: 'center',
+            end: "+=800",
             scrub: true,
             trigger: '.why-vsqaure',
         }
