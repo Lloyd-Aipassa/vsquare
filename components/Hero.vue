@@ -76,9 +76,9 @@ li {
     .hero {
         padding: 0;
     }
-    hero-contant-container{
-        width: calc(100%-48px);
-        margin: 0 auto;
+
+    .hero-contant-container {
+        padding: 24px;
     }
 
     .hero h1 {
@@ -88,6 +88,7 @@ li {
 
     .hero p {
         margin: 24px 0;
+        width: 100%;
     }
 
 
