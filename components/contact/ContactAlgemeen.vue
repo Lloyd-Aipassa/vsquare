@@ -15,9 +15,9 @@
     position: relative;
     max-width: 500px;
     background: var(--color-gradient);
-    padding: 50px;
+    padding: 72px;
     align-self: flex-start;
-    height: 430px;
+    height: 450px;
 }
 
 h2 {

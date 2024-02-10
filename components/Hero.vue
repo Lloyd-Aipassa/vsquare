@@ -58,6 +58,16 @@ onMounted(() => {
     width: 100%;
 }
 
+li {
+    list-style-type:circle; 
+}
+
+@media screen and (max-width: 1440px) {
+    .hero {
+    padding: 18px 0 80px 96px;
+}
+}
+@media screen and (max-width: 1240px) {}
 @media screen and (max-width: 720px) {
     .hero {
         padding: 0;

@@ -14,7 +14,7 @@
                             <label>Telefoonnummer</label>
                             <input type="text" name="phone" required />
                             <label>Organisatie</label>
-                            <input type="text" name="organisatie" id="organisatie" required />
+                            <input type="text" name="company" id="organisatie" required />
                             <label>Bericht</label>
                             <textarea rows="5" name="message"></textarea><br>
                             <input type="submit" value="Verstuur" />
@@ -71,7 +71,7 @@ export default {
 
     methods: {
         sendEmail() {
-            emailjs.sendForm('service_ozfvgtv', 'template_23frcr9', this.$refs.form, 'NpuBHe_vpdYjJ_LMf')
+            emailjs.sendForm('service_nepyjwa', 'template_6c06aw9', this.$refs.form, '_6uybFmlII80xQ-5B')
                 .then((result) => {
                     console.log('SUCCESS!', result.text);
                     this.email = '' // fix clearing email field bug

@@ -88,6 +88,16 @@ li a {
     color: var(--color-green);
 }
 
+@media screen and (max-width: 1440px) {
+    .footer-top {
+    background: #8D9986;
+    padding: 50px 0 50px 96px;
+    gap: 260px;
+}
+}
+
+@media screen and (max-width: 1240px) {}
+
 @media screen and (max-width: 720px) {
     .footer-top {
         padding: 50px;

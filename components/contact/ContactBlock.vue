@@ -25,9 +25,6 @@
 </template>
 
 <style scoped>
-#contact-buttons {
-    max-width: 300px;
-}
 
 a.meer-info {
     z-index: 3;
@@ -48,4 +45,5 @@ a.meer-info:hover {
     color: var(--color-light-green);
 }
 
-@media screen and (max-width: 600px) {}</style>
+@media screen and (max-width: 600px) {}
+</style>

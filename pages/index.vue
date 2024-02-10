@@ -519,7 +519,7 @@ p.sc-sub-title-bottom-text {
 
 #contact-block {
     background-color: #87B16D1A;
-    padding: 80px 0;
+    padding: 80px 200px;
     margin: 80px auto 0;
     display: flex;
     justify-content: center;
@@ -534,7 +534,61 @@ p.sc-sub-title-bottom-text {
     align-self: center;
 }
 
+@media screen and (max-width: 1440px) {
+    .vegitalian {
+        background-image: url("/vegitalian/vegitalian-pizzabar.webp");
+        padding: 96px 0 96px 96px;
+    }
+
+    /************** WHY V-SQUARE SECTION ************/
+
+    .why-vsqaure {
+        padding: 80px 0 80px 96px;
+        overflow: clip;
+
+    }
+
+
+    .why-vsqaure-container img.why-groente {
+        position: absolute;
+        top: 250px;
+        right: -30px;
+        width: 49%;
+    }
+
+    /************** WOODS SECTION ************/
+
+    .network {
+        position: absolute;
+        top: 18%;
+        right: 15%;
+        font-size: 70px;
+        font-weight: 600;
+    }
+
+
+    /************** Contact ************/
+
+    #contact-block {
+        background-color: #87B16D1A;
+        padding: 80px 96px;
+        margin: 80px auto 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+
+}
+
+@media screen and (max-width: 1240px) {}
+
+
+
+
 /************** Mobile ************/
+
 
 @media screen and (max-width: 720px) {
 

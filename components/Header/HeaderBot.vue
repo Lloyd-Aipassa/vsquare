@@ -321,10 +321,12 @@ p:hover p {
     display: none;
 }
 
-@media screen and (max-width: 1439px) {
+@media screen and (max-width: 1440px) {
     .container {
-        max-width: 1080px;
-    }
+
+    padding: 0 96px;
+
+}
 
     .nav-desktop ul {
         gap: 40px;
@@ -394,9 +396,11 @@ p:hover p {
         display: none;
     }
 
-    .container {
-        max-width: 90%;
-    }
+      .container {
+
+    padding: 0 24px;
+
+}
 
 
     .slider {
