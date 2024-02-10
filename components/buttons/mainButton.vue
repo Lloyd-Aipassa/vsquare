@@ -41,6 +41,7 @@ a:hover {
 
 @media screen and (max-width: 720px) {
     a {
+        max-width: 100%;
         width: 100%;
         justify-content: space-between;
     }
