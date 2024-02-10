@@ -607,7 +607,7 @@ p.sc-sub-title-bottom-text {
 
     .why-vsqaure-container {
         position: relative;
-        padding: 400px 24px 24px;
+        padding: 480px 24px 24px;
         background: linear-gradient(266.72deg, #778171 0%, #8EA680 99.03%);
         overflow-x: clip;
         overflow-y: visible;
