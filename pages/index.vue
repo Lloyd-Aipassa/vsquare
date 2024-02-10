@@ -204,8 +204,8 @@ onMounted(() => {
     //====animatie WHY V-SQUARE======
     let tl2 = gsap.timeline({
         scrollTrigger: {
-            markers: false,
-            start: 'bottom top',
+            // markers: true,
+            start: 'top bottom',
             scrub: true,
             trigger: '.why-vsqaure',
         }
@@ -215,7 +215,7 @@ onMounted(() => {
 
     let tl2Mob = gsap.timeline({
         scrollTrigger: {
-            markers: true,
+            // markers: true,
             start: 'top 900',
             end: "+=800",
             scrub: true,
