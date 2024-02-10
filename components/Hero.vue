@@ -59,19 +59,34 @@ onMounted(() => {
 }
 
 li {
-    list-style-type:circle; 
+    list-style-type: circle;
 }
 
 @media screen and (max-width: 1440px) {
     .hero {
-    padding: 18px 0 80px 96px;
+        padding: 18px 0 80px 96px;
+    }
 }
-}
+
 @media screen and (max-width: 1240px) {}
+
 @media screen and (max-width: 720px) {
     .hero {
         padding: 0;
     }
+
+    .hero h1 {
+        width: calc(100% - 24px);
+        max-width: 1300px;
+        margin-top: 40px;
+    }
+
+    .hero p {
+        width: calc(100% - 24px);
+        margin: 24px 0;
+    }
+
+
 }
 </style>
 
