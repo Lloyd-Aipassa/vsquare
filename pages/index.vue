@@ -704,7 +704,7 @@ p.sc-sub-title-bottom-text {
     
 .network {
     position: absolute;
-    top: 38%;
+    top: 43%;
     right: 25%;
     font-size: 55px;
     font-weight: 600;
@@ -720,8 +720,8 @@ p.sc-sub-title-bottom-text {
 
 .simple {
     position: absolute;
-    top: 30%;
-    left: 51%;
+    top: 35%;
+    left: 39%;
     font-size: 60px;
     font-weight: 600;
 }
@@ -753,7 +753,7 @@ p.sc-sub-title-bottom-text {
 .energy {
     position: absolute;
     top: 15%;
-    left: 52%;
+    left: 35%;
     font-size: 50px;
     font-weight: 600;
 }
