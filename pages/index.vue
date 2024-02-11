@@ -243,6 +243,7 @@ onMounted(() => {
 <style scoped>
 .vegitalian {
     background-image: url("/vegitalian/vegitalian-pizzabar.webp");
+    background-size: cover;
     padding: 130px 0 130px 200px;
 }
 
@@ -595,7 +596,10 @@ p.sc-sub-title-bottom-text {
 
     .vegitalian {
         background-image: url("/vegitalian/vegitalian-pizzabar.webp");
-        padding: 24px;
+        background-size: contain;
+        padding: 180px 24px 24px;
+        margin-bottom: 180px;
+        background-repeat: no-repeat;
     }
 
 

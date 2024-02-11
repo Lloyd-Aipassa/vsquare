@@ -62,10 +62,12 @@ onMounted(() => {
 @media screen and (max-width: 720px) {
     .card {
         padding: 24px;
+        margin-bottom: -180px;
+        box-shadow: 2px 4px 10px 0px #00000026;
     }
 
     .card h2 {
-     margin-bottom: -9px;
+        margin-bottom: -9px;
     }
 
     .card p {
