@@ -667,6 +667,7 @@ p.sc-sub-title-bottom-text {
         width: 100%;
         grid-template-columns: 1fr;
         gap: 4px;
+        margin-bottom: 40px;
     }
 
     p.team-sub-title {
@@ -699,6 +700,72 @@ p.sc-sub-title-bottom-text {
         position: relative;
         overflow: hidden;
     }
+
+    
+.network {
+    position: absolute;
+    top: 38%;
+    right: 25%;
+    font-size: 55px;
+    font-weight: 600;
+}
+
+.frank {
+    position: absolute;
+    top: 10%;
+    left: 15%;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.simple {
+    position: absolute;
+    top: 30%;
+    left: 51%;
+    font-size: 60px;
+    font-weight: 600;
+}
+
+.hands-on {
+    position: absolute;
+    top: 23%;
+    left: 22%;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.committed {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.pragmatic {
+    position: absolute;
+    top: 70%;
+    left: 25%;
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.energy {
+    position: absolute;
+    top: 15%;
+    left: 52%;
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.entrepreneurship {
+    position: absolute;
+    top: 80%;
+    left: 65%;
+    font-size: 30px;
+    font-weight: 600;
+}
+
 
     /************** Smart capital MOBILE ************/
 
