@@ -691,8 +691,6 @@ p.sc-sub-title-bottom-text {
 
 
     /************** WOODS MOBILE ************/
-
-    /* woods */
     .woods {
         background-image: url("/home/bos/Bos.webp");
         padding: 24px;
@@ -701,70 +699,70 @@ p.sc-sub-title-bottom-text {
         overflow: hidden;
     }
 
-    
-.network {
-    position: absolute;
-    top: 43%;
-    right: 25%;
-    font-size: 55px;
-    font-weight: 600;
-}
 
-.frank {
-    position: absolute;
-    top: 10%;
-    left: 15%;
-    font-size: 40px;
-    font-weight: 600;
-}
+    .network {
+        position: absolute;
+        top: 43%;
+        right: 25%;
+        font-size: 55px;
+        font-weight: 600;
+    }
 
-.simple {
-    position: absolute;
-    top: 35%;
-    left: 39%;
-    font-size: 60px;
-    font-weight: 600;
-}
+    .frank {
+        position: absolute;
+        top: 10%;
+        left: 15%;
+        font-size: 40px;
+        font-weight: 600;
+    }
 
-.hands-on {
-    position: absolute;
-    top: 23%;
-    left: 22%;
-    font-size: 40px;
-    font-weight: 600;
-}
+    .simple {
+        position: absolute;
+        top: 35%;
+        left: 39%;
+        font-size: 60px;
+        font-weight: 600;
+    }
 
-.committed {
-    position: absolute;
-    top: 50%;
-    left: 10%;
-    font-size: 25px;
-    font-weight: 600;
-}
+    .hands-on {
+        position: absolute;
+        top: 23%;
+        left: 22%;
+        font-size: 40px;
+        font-weight: 600;
+    }
 
-.pragmatic {
-    position: absolute;
-    top: 60%;
-    left: 25%;
-    font-size: 50px;
-    font-weight: 600;
-}
+    .committed {
+        position: absolute;
+        top: 50%;
+        left: 10%;
+        font-size: 25px;
+        font-weight: 600;
+    }
 
-.energy {
-    position: absolute;
-    top: 15%;
-    left: 35%;
-    font-size: 50px;
-    font-weight: 600;
-}
+    .pragmatic {
+        position: absolute;
+        top: 60%;
+        left: 25%;
+        font-size: 50px;
+        font-weight: 600;
+    }
 
-.entrepreneurship {
-    position: absolute;
-    top: 80%;
-    left: 15%;
-    font-size: 30px;
-    font-weight: 600;
-}
+    .energy {
+        position: absolute;
+        top: 15%;
+        left: 35%;
+        font-size: 50px;
+        font-weight: 600;
+    }
+
+    .entrepreneurship {
+        position: absolute;
+        top: 80%;
+        left: 15%;
+        font-size: 30px;
+        font-weight: 600;
+    }
 
 
     /************** Smart capital MOBILE ************/
@@ -778,26 +776,25 @@ p.sc-sub-title-bottom-text {
         justify-content: center;
     }
 
-
-
-
-
     .sc-cards-container {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
         gap: 24px;
         margin-bottom: 80px;
     }
 
     .sc-card {
-        display: flex;
-        flex-direction: column;
-        box-shadow: 2px 4px 10px 0px #00000026;
+        flex-direction: row;
         aspect-ratio: 0;
         align-items: center;
         padding: 40px 24px;
-        text-align: center;
+        text-align: left;
         height: 100%;
+    }
+
+    .sc-card img {
+        width: 77px;
+        height: auto;
     }
 
 
