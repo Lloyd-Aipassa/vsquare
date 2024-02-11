@@ -621,7 +621,7 @@ p.sc-sub-title-bottom-text {
 
 
     .why-vsqaure-img-text-container {
-        gap: 16px;
+        gap: 4px;
         flex-direction: column;
         align-items: flex-start;
     }
