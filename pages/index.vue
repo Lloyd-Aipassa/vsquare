@@ -671,9 +671,21 @@ p.sc-sub-title-bottom-text {
         margin-bottom: 40px;
     }
 
-    .team-card-content {
-        width: calc(100%-48px);
+    #team img {
+        width: 50%;
     }
+
+    .team-card-content {
+        width: 50%;
+        align-items: flex-start;
+        padding-left: 14px;
+    }
+
+    #team button img {
+        width: 35px;
+    }
+
+
 
     /************** WOODS MOBILE ************/
 
