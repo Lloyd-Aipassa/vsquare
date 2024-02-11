@@ -797,8 +797,12 @@ p.sc-sub-title-bottom-text {
         height: auto;
     }
 
+    p.sc-sub-title-bottom-text{
+        margin: 0;
+    }
 
-    /* Partners */
+
+    /* Partners mobile */
 
     #partners {
         width: calc(100% - 48px);
@@ -810,7 +814,11 @@ p.sc-sub-title-bottom-text {
     }
 
     #partners h2 {
-        margin-bottom: 70px;
+        margin-bottom: 0px;
+        text-align: center;
+    }
+    #partners h2 br {
+        display: none;
     }
 
     .partner-right-section,
