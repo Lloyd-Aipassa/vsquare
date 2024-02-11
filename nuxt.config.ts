@@ -4,7 +4,7 @@ export default defineNuxtConfig({
   modules: [
     ['@nuxtjs/google-fonts', {
       families: {
-        poppins: [100, 200, 300, 400, 500, 600, 700, 800, 900],
+        Poppins: [100, 200, 300, 400, 500, 600, 700, 800, 900],
         Inter: [100, 200, 300, 400, 500, 600, 700, 800, 900],
         download: true,
         inject: true
@@ -15,8 +15,6 @@ export default defineNuxtConfig({
 
 css: ['~/assets/main.css'],
 ssr: true,
-
-
 
 })
 
