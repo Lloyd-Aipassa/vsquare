@@ -657,14 +657,25 @@ p.sc-sub-title-bottom-text {
 
     /* TEAM */
 
+    #team {
+        padding: 40px 24px 0;
+    }
+
     .team {
         width: 100%;
         grid-template-columns: 1fr;
+        gap: 4px;
+    }
+
+    p.team-sub-title {
+        margin-bottom: 40px;
     }
 
     .team-card-content {
-        width: 100%;
+        width: calc(100%-48px);
     }
+
+    /************** WOODS MOBILE ************/
 
     /* woods */
     .woods {
@@ -675,7 +686,7 @@ p.sc-sub-title-bottom-text {
         overflow: hidden;
     }
 
-    /************** Smart capital ************/
+    /************** Smart capital MOBILE ************/
 
     #smart-capital {
         max-width: 100%;
