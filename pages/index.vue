@@ -737,14 +737,14 @@ p.sc-sub-title-bottom-text {
 .committed {
     position: absolute;
     top: 50%;
-    left: 50%;
-    font-size: 35px;
+    left: 10%;
+    font-size: 25px;
     font-weight: 600;
 }
 
 .pragmatic {
     position: absolute;
-    top: 70%;
+    top: 60%;
     left: 25%;
     font-size: 50px;
     font-weight: 600;
@@ -761,7 +761,7 @@ p.sc-sub-title-bottom-text {
 .entrepreneurship {
     position: absolute;
     top: 80%;
-    left: 65%;
+    left: 15%;
     font-size: 30px;
     font-weight: 600;
 }
