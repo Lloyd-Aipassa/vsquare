@@ -5,31 +5,40 @@
             <div class="container-header">
                 <ul>
                     <li>
-                        <svg width="17" height="12" viewBox="0 0 17 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M15.0221 1L5.51708 11L1.02209 6.76894" stroke="white" stroke-width="2"
-                                stroke-linecap="round" stroke-linejoin="round" />
-                        </svg>
-                        <p>
-                            Over 150+ transactions
-                        </p>
+                        <div class="kwaliteit1">
+                            <p>
+                                <svg width="17" height="12" viewBox="0 0 17 12" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M15.0221 1L5.51708 11L1.02209 6.76894" stroke="white" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                                Over 150+ transactions
+                            </p>
+                        </div>
                     </li>
                     <li>
-                        <svg width="17" height="12" viewBox="0 0 17 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M15.0221 1L5.51708 11L1.02209 6.76894" stroke="white" stroke-width="2"
-                                stroke-linecap="round" stroke-linejoin="round" />
-                        </svg>
-                        <p>
-                            Board members in big corporates
-                        </p>
+                        <div class="kwaliteit2">
+                            <p>
+                                <svg width="17" height="12" viewBox="0 0 17 12" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M15.0221 1L5.51708 11L1.02209 6.76894" stroke="white" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                                Board members in big corporates
+                            </p>
+                        </div>
                     </li>
                     <li>
-                        <svg width="17" height="12" viewBox="0 0 17 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M15.0221 1L5.51708 11L1.02209 6.76894" stroke="white" stroke-width="2"
-                                stroke-linecap="round" stroke-linejoin="round" />
-                        </svg>
-                        <p>
-                            Extensive network
-                        </p>
+                        <div class="kwaliteit3">
+                            <p>
+                                <svg width="17" height="12" viewBox="0 0 17 12" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M15.0221 1L5.51708 11L1.02209 6.76894" stroke="white" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                                Extensive network
+                            </p>
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -45,28 +54,30 @@
     align-items: center;
     justify-content: flex-end;
     height: 38px;
-    position: relative;
     z-index: 3;
     padding: 0 200px;
     background-color: #8D9986;
 }
 
 .container-header {
-
     display: flex;
     align-items: center;
+    position: relative;
 }
 
 
 
 ul {
+    position: relative;
     display: flex;
     list-style: none;
     justify-content: flex-end;
     gap: 40px;
 }
 
-li {
+.kwaliteit1,
+.kwaliteit2,
+.kwaliteit3 {
     display: flex;
     gap: 5px;
     align-items: center;
@@ -82,52 +93,127 @@ li p {
 }
 
 @media screen and (max-width: 1439px) {
-    .container-header {
-        width: 1080px;
+    .header {
         display: flex;
-        justify-content: space-between;
+        align-items: center;
+        justify-content: flex-end;
+        padding: 0 96px;
+
     }
 }
 
-@media screen and (max-width: 1239px) {
+@media screen and (max-width: 1239px) {}
+
+@media screen and (max-width: 720px) {
     .header {
-        display: none;
-    }
-
-    .mob {
-        display: block;
-        background-color: #001d3d;
-    }
-
-    /* .container-header {
-        width: 785px;
         display: flex;
-        justify-content: space-between;
-    }
-
-    li p {
-        color: #fff;
-        font-size: 12px;
+        align-items: center;
+        justify-content: center;
+        padding: 0px 96px;
     }
 
     ul {
-        width: 680px;
-        display: flex;
-        list-style: none;
-        justify-content: space-between;
-    } */
-}
-
-@media screen and (max-width: 720px) {
-
-    .header {
-        display: none;
-    }
-
-    .mob {
         display: block;
-        background-color: #001d3d;
+        position: relative;
     }
+
+    li p {
+        width: 300px;
+    }
+
+
+    .kwaliteit1,
+    .kwaliteit2,
+    .kwaliteit3 {
+        position: absolute;
+        display: block;
+        margin: 0 auto;
+        margin-top: -10px;
+        text-align: center;
+        transform: translate(-50%);
+        opacity: 1;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .kwaliteit1 {
+        display: flex;
+        flex-direction: row;
+        opacity: 1;
+        animation-name: kwaliteit1;
+        animation-duration: 12s;
+        animation-iteration-count: infinite;
+        transition: all 1s;
+    }
+
+    @keyframes kwaliteit1 {
+        0% {
+            opacity: 1;
+        }
+
+        33% {
+            opacity: 0;
+        }
+
+        66% {
+            opacity: 0;
+        }
+
+    }
+
+    .kwaliteit2 {
+        display: flex;
+        flex-direction: row;
+        opacity: 0;
+        animation-name: kwaliteit2;
+        animation-duration: 12s;
+        animation-iteration-count: infinite;
+        transition: all 1s;
+    }
+
+    @keyframes kwaliteit2 {
+        0% {
+            opacity: 0;
+        }
+
+        33% {
+            opacity: 1;
+        }
+
+        66% {
+            opacity: 0;
+        }
+
+    }
+
+    .kwaliteit3 {
+        display: flex;
+        flex-direction: row;
+        opacity: 0;
+        animation-name: kwaliteit3;
+        animation-duration: 12s;
+        animation-iteration-count: infinite;
+        transition: all 1s;
+    }
+
+    @keyframes kwaliteit3 {
+        0% {
+            opacity: 0;
+        }
+
+        33% {
+            opacity: 0;
+        }
+
+        66% {
+            opacity: 1;
+        }
+
+
+    }
+
+
+
 
 }
 </style>
