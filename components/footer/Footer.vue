@@ -1,25 +1,25 @@
 <template>
     <div class="footer-top">
         <ul>
-            <li class="footer-title">
-                V-SQUARE
+            <li>
+                <p class="footer-title"> V-SQUARE</p>
             </li>
             <li>
-                Keizersgracht 649
+                <p>Keizersgracht 649</p>
             </li>
             <li>
-                1017 DT Amsterdam
+                <p> 1017 DT Amsterdam</p>
             </li>
             <li>
-                +31 63 02 61 684
+                <p>+31 63 02 61 684</p>
             </li>
             <li>
-                lucas@v-square.eu
+                <p> lucas@v-square.eu</p>
             </li>
         </ul>
         <ul>
-            <li class="footer-title">
-                Menu
+            <li>
+                <p class="footer-title">Menu</p>
             </li>
             <li>
                 <NuxtLink to="/">
@@ -51,6 +51,7 @@
     gap: 260px;
 }
 
+
 ul {
     list-style: none;
     color: #fff;
@@ -59,25 +60,32 @@ ul {
     gap: 15px;
 }
 
-li.footer-title {
+li p.footer-title {
     font-size: 16px;
     font-weight: 600;
-    line-height: 34px;
+    line-height: 24px;
+    color: #fff;
 }
 
-li a {
+li a,
+li p {
+    display: block;
     font-size: 16px;
-    font-weight: 100;
-    line-height: 34px;
+    font-weight: 200;
+    line-height: 16px;
     color: #fff;
     text-decoration: none;
+}
+
+li a:hover {
+    color: var(--color-light-green);
 }
 
 .footer-bottom {
     height: 60px;
     padding: 0 200px 0 0;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: flex-end;
 }
 
@@ -90,20 +98,28 @@ li a {
 
 @media screen and (max-width: 1440px) {
     .footer-top {
-    background: #8D9986;
-    padding: 50px 0 50px 96px;
-    gap: 260px;
-}
+        background: #8D9986;
+        padding: 50px 0 50px 96px;
+        gap: 260px;
+    }
 }
 
 @media screen and (max-width: 1240px) {}
 
 @media screen and (max-width: 720px) {
     .footer-top {
-        padding: 50px;
+        padding: 70px 0;
         flex-direction: column;
         text-align: center;
         gap: 50px;
+    }
+
+    .footer-bottom {
+        height: 48px;
+        padding: 0 0 14px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 }
 </style>

@@ -16,6 +16,29 @@ export default defineNuxtConfig({
 css: ['~/assets/main.css'],
 ssr: true,
 
+
+app:{
+  // pageTransition: { name: 'page', mode: 'in-out' },
+  
+  head:{
+    htmlAttrs: {
+      lang: 'nl',
+    },
+      title: 'V-square',
+      link: [
+        { rel: 'icon', type: 'image/x-icon', href: '/favicon.png' }
+      ],
+
+      meta:[
+        {}
+      ],
+
+      script: [
+
+      ],
+  }
+},
+
 })
 
 

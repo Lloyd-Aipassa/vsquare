@@ -797,7 +797,7 @@ p.sc-sub-title-bottom-text {
         height: auto;
     }
 
-    p.sc-sub-title-bottom-text{
+    p.sc-sub-title-bottom-text {
         margin: 0;
     }
 
@@ -817,6 +817,7 @@ p.sc-sub-title-bottom-text {
         margin-bottom: 0px;
         text-align: center;
     }
+
     #partners h2 br {
         display: none;
     }
@@ -830,7 +831,7 @@ p.sc-sub-title-bottom-text {
 
     #contact-block {
         background-color: #87B16D1A;
-        padding: 80px 0;
+        padding: 0 0px 10px;
         margin: 80px auto 0;
         display: flex;
         flex-direction: column-reverse;
