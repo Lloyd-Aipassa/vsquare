@@ -234,7 +234,7 @@ onMounted(() => {
             trigger: '.woods',
         }
     })
-    tl3.fromTo('.animate-words', { opacity: '0', y: '100' }, { opacity: '1', y: '0', stagger: 0.3, duration: 1.3 });
+    tl3.fromTo('.animate-words', { opacity: '0', y: '100' }, { opacity: '1', y: '0', delay: 1.5, stagger: 0.3, duration: 1.3 });
 
 })
 
