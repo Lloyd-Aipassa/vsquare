@@ -1,7 +1,7 @@
 <template>
     <div class="partnercard" v-for="(content, index) in Partner" :key="index">
-        <img :src="content.ImageBig" class="img-big" alt="">
-        <img :src="content.ImageSmall" class="img-small" alt="">
+        <img loading="lazy" :src="content.ImageBig" class="img-big" alt="">
+        <img loading="lazy" :src="content.ImageSmall" class="img-small" alt="">
         <p> {{ content.p }}</p>
     </div>
 </template>

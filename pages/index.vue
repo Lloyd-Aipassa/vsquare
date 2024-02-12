@@ -39,8 +39,8 @@
                         <p>With capacity that can be used flexible in accordance with the needs of the company</p>
                     </div>
                 </div>
-                <img class="why-groente why-big" src="/home/whyVsquare/tangerine.webp" alt="groente">
-                <img class="why-groente why-small" src="/home/whyVsquare/tangerine.webp" alt="groente">
+                <img loading="lazy" class="why-groente why-big" src="/home/whyVsquare/tangerine.webp" alt="groente">
+                <img loading="lazy"  class="why-groente why-small" src="/home/whyVsquare/tangerine.webp" alt="groente">
             </div>
         </section>
         <section id="team">
@@ -50,28 +50,28 @@
             </p>
             <div class="team">
                 <div class="team-card">
-                    <img src="/home/team/Felix.webp" alt="">
+                    <img loading="lazy" src="/home/team/Felix.webp" alt="">
                     <div class="team-card-content">
                         <p>Felix Hillen</p>
                         <button>Read more <img src="/buttons/arrow.svg" alt=""></button>
                     </div>
                 </div>
                 <div class="team-card">
-                    <img src="/home/team/Lucas.webp" alt="">
+                    <img loading="lazy" src="/home/team/Lucas.webp" alt="">
                     <div class="team-card-content">
                         <p>Lucas Rijckmans</p>
                         <button>Read more <img src="/buttons/arrow.svg" alt=""></button>
                     </div>
                 </div>
                 <div class="team-card">
-                    <img src="/home/team/Marcus.webp" alt="">
+                    <img loading="lazy" src="/home/team/Marcus.webp" alt="">
                     <div class="team-card-content">
                         <p>Markus Konings</p>
                         <button>Read more <img src="/buttons/arrow.svg" alt=""></button>
                     </div>
                 </div>
                 <div class="team-card">
-                    <img src="/home/team/Arjan.webp" alt="">
+                    <img loading="lazy" src="/home/team/Arjan.webp" alt="">
                     <div class="team-card-content">
                         <p>Arjan Witteveen</p>
                         <button>Read more <img src="/buttons/arrow.svg" alt=""></button>
@@ -153,7 +153,7 @@
             <div class="contact-block-container">
                 <ContactAlgemeen />
             </div>
-            <img src="/vegitalian/CinnamonHand.webp" alt="">
+            <img loading="lazy" src="/vegitalian/CinnamonHand.webp" alt="cup cake">
         </section>
     </div>
 </template>
