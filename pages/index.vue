@@ -39,8 +39,8 @@
                         <p>With capacity that can be used flexible in accordance with the needs of the company</p>
                     </div>
                 </div>
-                <img loading="lazy" class="why-groente why-big" src="/home/whyVsquare/tangerine.webp" alt="groente">
-                <img loading="lazy"  class="why-groente why-small" src="/home/whyVsquare/tangerine.webp" alt="groente">
+                <img  class="why-groente why-big" src="/home/whyVsquare/tangerine.webp" alt="groente">
+                <img  class="why-groente why-small" src="/home/whyVsquare/tangerine.webp" alt="groente">
             </div>
         </section>
         <section id="team">
