@@ -306,7 +306,7 @@ p:hover p {
 
 
     .container img {
-        margin-bottom: 0px;
+        margin-bottom: 8px;
         width: 153px;
     }
 
