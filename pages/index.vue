@@ -145,7 +145,7 @@ const Link2 = '/vegitalian-project'
 // ** Hero **
 const HeroContent = [{
     Image: "/hero/header-home.webp",
-    Title: 'THE CHALLENGE',
+    Title: 'THE BEST HEALTHY AND SUSTAINABLE FOOD ON EVERY CORNER',
     p: 'There is a growing momentum for people to switch from animal-based to more sustainable, plant-forward diets.To make this switch, most potential flexitarians need more and more tasty and conveniently available restaurants and deliverers to seduce them.',
 }]
 

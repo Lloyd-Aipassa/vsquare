@@ -32,7 +32,7 @@ onMounted(() => {
 
 <style scoped>
 .hero {
-    padding: 18px 0 80px 200px;
+    padding: 0px 0 80px 200px;
     height: 100vh;
 }
 
@@ -84,7 +84,7 @@ li {
 
     .hero h1 {
         max-width: 1300px;
-        margin-top: 40px;
+        margin-top: 26px;
     }
 
     .hero p {

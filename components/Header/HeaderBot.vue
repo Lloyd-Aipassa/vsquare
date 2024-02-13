@@ -108,12 +108,12 @@ const Diensten = ref(false)
 const OverOns = ref(false)
 const Menu = () => Slider.value = true
 const Close = () => Slider.value = false
-const OpenDiensten = () => Diensten.value = true
-const OpenOverOns = () => OverOns.value = true
-const CloseMain = () => Main.value = false
-const CloseDiensten = () => Diensten.value = false
-const CloseOverOns = () => OverOns.value = false
-const OpenMain = () => Main.value = true
+// const OpenDiensten = () => Diensten.value = true
+// const OpenOverOns = () => OverOns.value = true
+// const CloseMain = () => Main.value = false
+// const CloseDiensten = () => Diensten.value = false
+// const CloseOverOns = () => OverOns.value = false
+// const OpenMain = () => Main.value = true
 
 const props = defineProps({
     Link: String,
@@ -127,21 +127,28 @@ const props = defineProps({
 <style scoped>
 .header-container {
     background-color: #fff;
-    height: 96px;
+    /* height: 96px; */
     display: flex;
     margin: 0 auto;
     position: relative;
     z-index: 1000;
+    margin-bottom: -20px;
 }
 
 .container {
     position: relative;
     height: 100%;
-    padding: 0 200px;
+    padding: 20px 200px;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+/* Img niet goed gesneden aan de onderkant */
+.container img {
+    margin-bottom: -8px;
+
 }
 
 .nav-desktop ul {
@@ -263,6 +270,8 @@ p:hover p {
         height: 75px;
     }
 
+
+
     .nav-mobile {
         display: block;
     }
@@ -291,12 +300,17 @@ p:hover p {
     }
 
     .container {
-        padding: 0 24px;
+        padding: 8px 24px;
     }
 
     .container svg {
-        display: block;
-        margin-top: -30px;
+        /* display: block;
+        margin-top: -30px; */
+    }
+
+    .container img {
+        margin-bottom: -8px;
+        width: 153px;
     }
 
     .slider {
