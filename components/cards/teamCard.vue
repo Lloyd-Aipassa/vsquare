@@ -105,12 +105,14 @@ const isOpen = ref(false)
 
 .name-image-container {
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     gap: 24px;
 }
 
 .name-image-container p {
     font-size: 24px;
+    margin: 0 !important;
+    color: var(--color-light-green) !important;
 }
 
 .popup button {
