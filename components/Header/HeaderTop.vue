@@ -138,26 +138,22 @@ li p {
     .kwaliteit1 {
         display: flex;
 
-        animation-name: kwaliteit1;
+        animation-name: ani;
         animation-duration: 20s;
         animation-iteration-count: infinite;
         transition: all 0.1s;
     }
 
-    @keyframes kwaliteit1 {
+    @keyframes ani {
         0% {
             display: flex;
         }
 
-        23% {
+        31% {
             display: flex;
         }
 
-        24% {
-            display: none;
-        }
-
-        66% {
+        32% {
             display: none;
         }
 
@@ -168,32 +164,32 @@ li p {
     }
 
     .kwaliteit2 {
-        display: none;
-        animation-name: kwaliteit2;
+        display: flex;
+        animation-name: test2;
         animation-duration: 20s;
         animation-iteration-count: infinite;
         transition: all 0.1s;
     }
 
-    @keyframes kwaliteit2 {
+    @keyframes test2 {
         0% {
             display: none;
         }
 
 
         33% {
+            display: none;
+        }
+
+        34% {
             display: flex;
         }
 
-        33% {
+        64% {
             display: flex;
         }
 
-        56% {
-            display: flex;
-        }
-
-        57% {
+        65% {
             display: none;
         }
 
@@ -221,20 +217,20 @@ li p {
             display: none;
         }
 
-        65% {
-            display: block;
+        66% {
+            display: none;
         }
 
-        66% {
-            display: block;
+        67% {
+            display: flex;
         }
 
         89% {
-            display: block;
+            display: flex;
         }
 
         99% {
-            display: none;
+            display: flex;
         }
 
         100% {
