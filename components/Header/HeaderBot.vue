@@ -300,16 +300,13 @@ p:hover p {
     }
 
     .container {
-        padding: 8px 24px;
+        padding: 8px 24px 0;
     }
 
-    .container svg {
-        /* display: block;
-        margin-top: -30px; */
-    }
+
 
     .container img {
-        margin-bottom: -8px;
+        margin-bottom: 0px;
         width: 153px;
     }
 

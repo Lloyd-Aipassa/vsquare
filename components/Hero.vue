@@ -1,6 +1,8 @@
 <template>
     <section class="hero" v-for="(content, index) in HeroContent" :key="index">
-        <img :src="content.Image" alt="Header imges of vegan food" class="animate-right-left">
+        <img :src="content.Image" alt="Header imges of vegan food" class="desk animate-right-left">
+        <img :src="content.MobImage" alt="Header imges of vegan food" class="mob animate-right-left">
+        <!-- alt="Header imges of vegan food" class="animate-right-left"> -->
         <div class="hero-contant-container">
             <div class="hero-content animatie-2">
                 <h1 id="healthy">{{ content.Title }}</h1>
@@ -34,6 +36,10 @@ onMounted(() => {
 .hero {
     padding: 0px 0 80px 200px;
     height: 100vh;
+}
+
+.hero .mob {
+    display: none;
 }
 
 .animate-right-left {
@@ -76,6 +82,14 @@ li {
 @media screen and (max-width: 720px) {
     .hero {
         padding: 0;
+    }
+
+    .hero .mob {
+        display: block;
+    }
+
+    .hero .desk {
+        display: none;
     }
 
     .hero-contant-container {
