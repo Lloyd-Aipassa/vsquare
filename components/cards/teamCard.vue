@@ -145,16 +145,11 @@ button.close:hover {
 }
 
 @media screen and (max-width: 1439px) {
-    .recommendation {
-        max-width: 1080px;
-    }
+ 
 }
 
 @media screen and (max-width: 1239px) {
-    .recommendation {
-        max-width: 785px;
-        margin: 0 auto 54px;
-    }
+ 
 }
 
 @media screen and (max-width: 720px) {
@@ -175,24 +170,6 @@ button.close:hover {
         height: auto;
     }
 
-    .recommendation {
-        display: flex;
-        flex-direction: column;
-        align-items: baseline;
-        max-width: 90%;
-        padding: 28px;
-        gap: 32px;
-    }
-
-    .q {
-        width: 100%;
-    }
-
-    .recommendation img.face-img {
-        border-radius: 50%;
-        width: 74px;
-        height: 74px;
-    }
 
     .modal {
         background-color: rgba(0, 0, 0, 0.7);
@@ -202,6 +179,19 @@ button.close:hover {
         width: 90%;
         margin: 0 auto;
     }
+
+    .popup {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    overflow:auto;
+    justify-content: center;
+    max-width: 800px;
+    min-height: 300px;
+    background-color: var(--color-green);
+    border-radius: 8px;
+}
 
 }
 
