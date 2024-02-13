@@ -71,7 +71,7 @@ li a,
 li p {
     display: block;
     font-size: 16px;
-    font-weight: 300;
+    font-weight: 200;
     line-height: 16px;
     color: #fff;
     text-decoration: none;
@@ -120,6 +120,10 @@ li a:hover {
         display: flex;
         align-items: center;
         justify-content: center;
+    }
+
+    li p {
+        font-weight: 300;
     }
 
 }
