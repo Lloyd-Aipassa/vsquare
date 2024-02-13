@@ -137,8 +137,7 @@ li p {
 
     .kwaliteit1 {
         display: flex;
-
-        animation-name: ani;
+        /* animation-name: ani; */
         animation-duration: 20s;
         animation-iteration-count: infinite;
         transition: all 0.1s;
@@ -164,8 +163,8 @@ li p {
     }
 
     .kwaliteit2 {
-        display: flex;
-        animation-name: test2;
+        display: none;
+        /* animation-name: test2; */
         animation-duration: 20s;
         animation-iteration-count: infinite;
         transition: all 0.1s;
@@ -200,9 +199,8 @@ li p {
     }
 
     .kwaliteit3 {
-        display: flex;
-        /* opacity: 0; */
-        animation-name: kwaliteit3;
+        display: none;
+        /* animation-name: test3; */
         animation-duration: 20s;
         animation-iteration-count: infinite;
         transition: all 0.1s;

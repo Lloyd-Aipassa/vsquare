@@ -39,8 +39,8 @@
                         <p>With capacity that can be used flexible in accordance with the needs of the company</p>
                     </div>
                 </div>
-                <img  class="why-groente why-big" src="/home/whyVsquare/tangerine.webp" alt="groente">
-                <img  class="why-groente why-small" src="/home/whyVsquare/tangerine.webp" alt="groente">
+                <img class="why-groente why-big" src="/home/whyVsquare/tangerine.webp" alt="groente">
+                <img class="why-groente why-small" src="/home/whyVsquare/tangerine.webp" alt="groente">
             </div>
         </section>
         <section id="team">
@@ -50,28 +50,28 @@
             </p>
             <div class="team">
                 <div class="team-card">
-                    <img loading="lazy" src="/home/team/Felix.webp" alt="">
+                    <img loading="lazy" src="/home/team/Felix.webp" width="248" height="248" alt="Felix">
                     <div class="team-card-content">
                         <p>Felix Hillen</p>
                         <button>Read more <img src="/buttons/arrow.svg" alt=""></button>
                     </div>
                 </div>
                 <div class="team-card">
-                    <img loading="lazy" src="/home/team/Lucas.webp" alt="">
+                    <img loading="lazy" src="/home/team/Lucas.webp" width="248" height="248" alt="Lucas">
                     <div class="team-card-content">
                         <p>Lucas Rijckmans</p>
                         <button>Read more <img src="/buttons/arrow.svg" alt=""></button>
                     </div>
                 </div>
                 <div class="team-card">
-                    <img loading="lazy" src="/home/team/Marcus.webp" alt="">
+                    <img loading="lazy" src="/home/team/Marcus.webp" width="248" height="248" alt="Marcus">
                     <div class="team-card-content">
                         <p>Markus Konings</p>
                         <button>Read more <img src="/buttons/arrow.svg" alt=""></button>
                     </div>
                 </div>
                 <div class="team-card">
-                    <img loading="lazy" src="/home/team/Arjan.webp" alt="">
+                    <img loading="lazy" src="/home/team/Arjan.webp" width="248" height="248" alt="Arjan">
                     <div class="team-card-content">
                         <p>Arjan Witteveen</p>
                         <button>Read more <img src="/buttons/arrow.svg" alt=""></button>
@@ -153,7 +153,7 @@
             <div class="contact-block-container">
                 <ContactAlgemeen />
             </div>
-            <img loading="lazy" src="/vegitalian/CinnamonHand.webp" alt="cup cake">
+            <img src="/vegitalian/CinnamonHand.webp" alt="cup cake">
         </section>
     </div>
 </template>
@@ -302,8 +302,10 @@ onMounted(() => {
 /************** TEAM ************/
 
 .team {
-    display: grid;
-    width: 996px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1100px;
     margin: 0 auto 80px;
     grid-template-columns: 1fr 1fr;
     gap: 24px;
@@ -315,7 +317,7 @@ onMounted(() => {
 }
 
 p.team-sub-title {
-    max-width: 813px;
+    max-width: 913px;
     font-size: 18px;
     font-weight: 500;
     line-height: 27px;
@@ -333,8 +335,9 @@ p.team-sub-title {
 .team-card-content {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
+    padding-left: 48px;
     background-color: var(--color-green);
     width: 248px;
 }
@@ -644,12 +647,6 @@ p.sc-sub-title-bottom-text {
     }
 
 
-
-    /* .why-vsqaure-img-text-container img {
-        width: 30px;
-    } */
-
-
     .why-vsqaure-container img.why-groente {
         position: absolute;
         top: -20px;
@@ -663,25 +660,32 @@ p.sc-sub-title-bottom-text {
         padding: 40px 24px 0;
     }
 
+
     .team {
-        width: 100%;
-        grid-template-columns: 1fr;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        max-width: 1100px;
+        margin: 0 auto 80px;
         gap: 4px;
-        margin-bottom: 40px;
     }
 
-    p.team-sub-title {
-        margin-bottom: 40px;
-    }
-
-    #team img {
-        width: 50%;
+    .team-card {
+        width: 100%;
     }
 
     .team-card-content {
         width: 50%;
-        align-items: flex-start;
-        padding-left: 14px;
+        aspect-ratio: 1;
+    }
+
+    .team-card img {
+        width: 50%;
+        height: auto;
+    }
+
+    p.team-sub-title {
+        margin-bottom: 40px;
     }
 
     #team button img {

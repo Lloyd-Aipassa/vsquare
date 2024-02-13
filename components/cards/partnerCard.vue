@@ -1,7 +1,7 @@
 <template>
     <div class="partnercard" v-for="(content, index) in Partner" :key="index">
-        <img loading="lazy" :src="content.ImageBig" class="img-big" alt="">
-        <img loading="lazy" :src="content.ImageSmall" class="img-small" alt="">
+        <img :src="content.ImageBig" class="img-big" alt="Partner">
+        <img :src="content.ImageSmall" class="img-small" alt="logo">
         <p> {{ content.p }}</p>
     </div>
 </template>
@@ -51,6 +51,13 @@ onMounted(() => {
 }
 
 @media screen and (max-width: 720px) {
+
+    .partnercard {
+        aspect-ratio: 0;
+        max-width: 100%;
+        width: 100%;
+    }
+
     .partnercard img.img-big {
         width: 100%;
     }

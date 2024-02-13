@@ -2,6 +2,7 @@
     <div>
         <Hero :ButtonTekst="ButtonTekst" :Link="Link" :HeroContent="HeroContent" />
     </div>
+    
 </template>
 
 <script setup>

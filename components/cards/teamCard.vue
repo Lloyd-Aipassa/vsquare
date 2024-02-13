@@ -1,15 +1,13 @@
 <template>
-    <section class="recommendation" v-for="(card, index) in cardOne" :key="index">
-        <div class="left">
-            <img :src="card.Image" width="64" height="64" class="face-img" :alt="card.Name">
-            <div class="right">
-                <h2>{{ card.Name }}</h2>
-                <p class="title"> {{ card.Title }} </p>
-                <p class="function"> {{ card.Function }} </p>
+    <section class="team-section" v-for="(card, index) in cardOne" :key="index">
+    
+
+        <div class="team-card">
+            <img loading="lazy" src="/home/team/Felix.webp" alt="">
+            <div class="team-card-content">
+                <p>Felix Hillen</p>
+                <button>Read more <img src="/buttons/arrow.svg" alt=""></button>
             </div>
-        </div>
-        <div class="q">
-            <p><i class="short-quote" v-html="card.ShortQuote"></i></p>
         </div>
 
         <div class="root">
@@ -24,7 +22,7 @@
                 <Transition>
                     <div class="modal" v-show="isOpen">
                         <div class="popup">
-                            <img :src="card.Image" class="face-img" alt="Foto Lotte Konieczek-Sommerdijk">
+                            <img :src="card.Image" class="face-img" alt="Foto team">
                             <p>{{ card.Quote }}</p>
                             <button @click="isOpen = false">sluiten</button>
                         </div>
@@ -38,8 +36,8 @@
 <script setup>
 const props = defineProps({
     cardOne: {
-    type: Array,
-    required: true
+        type: Array,
+        required: true
     }
 })
 
@@ -47,85 +45,7 @@ const isOpen = ref(false)
 </script>
 
 <style scoped>
-.recommendation {
-    background: var(--color-blue);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    max-width: 1200px;
-    margin: 0 auto 80px;
-    padding: 28px;
-    box-shadow: 2px 2px 14px rgba(0, 0, 0, 0.9);
-    border-radius: 8px;
-    z-index: 5;
-    position: relative;
-}
 
-.recommendation img.face-img,
-.popup img.face-img {
-    border-radius: 50%;
-    width: 64px;
-    height: 64px;
-}
-
-.left {
-    display: flex;
-    gap: 12px;
-    height: 100%;
-    align-items: center;
-    width: 2678x;
-}
-
-.right h2 {
-    color: var(--color-orange);
-    font-size: 16px;
-    line-height: 22px;
-    font-weight: 400;
-}
-
-.right p {
-    font-size: 12px;
-    color: #fff;
-    line-height: 20px;
-}
-
-.right p.title {
-    font-size: 16px;
-    line-height: 22px;
-    font-weight: 400;
-}
-
-i.short-quote {
-    color: white;
-}
-
-.q {
-    width: 400px;
-}
-
-button.test {
-    height: 40px;
-    background-color: #ffffff00;
-    border: none;
-}
-
-button.test {
-    display: flex;
-    align-items: center;
-    gap: 13px;
-    cursor: pointer;
-}
-
-button.test {
-    font-size: 16px;
-    line-height: 24px;
-    text-decoration: none;
-    color: #fff;
-}
-
-.function {
-    max-width: 200px;
-}
 
 .root {
     position: relative;
