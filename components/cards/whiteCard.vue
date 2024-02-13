@@ -54,10 +54,6 @@ onMounted(() => {
     margin: 24px 0 36px;
 }
 
-p.test{
-    
-}
-
 .card span {
     display: block;
     padding: 0 0 16px 0;

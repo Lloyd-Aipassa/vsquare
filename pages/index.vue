@@ -157,24 +157,24 @@ const WhiteCard = [{
 
 // ** Team **
 const cardTeam = [{
-    Name: "Felix",
+    Name: "Felix Hillen",
     Image: "/home/team/Felix.webp",
     p: 'Throughout my very diverse working life I have been involved in and responsible for several high-growth trajectories of companies in their start- and scale-up phase. In my last adventure at The Student Hotel, we grew through start-up, with a new product and business model, to a scale-up. Within 9 years we have developed a 27 hotels portfolio, with 11,000 rooms, in 7 countries, run by 750 people.<br><br> In a previous role, in a fast growing technology company, we have not been successful in the scale-up phase. The lessons learned proved to be very helpful at TSH, as well as in my role at Eden, managing the company through growth as well as through the credit crisis impact.<br><br> Further relevant experiences are in fund structuring, technology, investment management and in corporate finance transactions. And I’m a train diplomat',
 }]
 
 const cardTeam2 = [{
-    Name: "Lucas",
+    Name: "Lucas Rijckmans",
     Image: "/home/team/Lucas.webp",
     p: 'My last position was Chief Corporate Services at The Student Hotel (“TSH”). In the 6 years I have worked at TSH I have supported the growth of TSH from a portfolio of 2 hotels open and 1 under construction to a portfolio of 23 hotels (11 under construction) in 7 jurisdictions and 750 staff<br><br> As CCS I was end responsible for the corporate backbone of TSH. I have built and managed various specialized teams such as Legal & Compliance, Treasury & Banking, Risk Management, CSR and Procurement Adding this to my previous experience as a Lawyer (Banking & Finance) and Corporate Banker I can support scale up companies in their growth at various areas of their business.',
 }]
 
 const cardTeam3 = [{
-    Name: "Marcus",
+    Name: "Markus Konings",
     Image: "/home/team/Marcus.webp",
     p: 'Het FoodService Instituut Nederland (FSIN) is een onafhankelijk kennisplatform in de foodsector.',
 }]
 const cardTeam4 = [{
-    Name: "Arjan",
+    Name: "Arjan Witteveen",
     Image: "/home/team/Arjan.webp",
     p: 'Het FoodService Instituut Nederland (FSIN) is een onafhankelijk kennisplatform in de foodsector.',
 }]

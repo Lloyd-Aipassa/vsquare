@@ -4,7 +4,7 @@
             <img loading="lazy" :src="card.Image" class="face-img" alt="Foto team">
             <div class="team-card-content">
                 <p>{{ card.Name }}</p>
-                <button @click="isOpen = true">Read more <img src="/buttons/arrow.svg" alt=""></button>
+                <button @click="isOpen = true">Read more <img class="arrow" src="/buttons/arrow.svg" alt=""></button>
             </div>
         </div>
 
@@ -80,7 +80,7 @@ const isOpen = ref(false)
     position: fixed;
     top: 0;
     left: 0;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.6);
     width: 100%;
     height: 100%;
     display: flex;
@@ -95,7 +95,7 @@ const isOpen = ref(false)
     display: flex;
     flex-direction: column;
     padding: 50px;
-    overflow:auto;
+    overflow: auto;
     justify-content: center;
     max-width: 800px;
     min-height: 300px;
@@ -106,7 +106,7 @@ const isOpen = ref(false)
 .name-image-container {
     display: flex;
     align-items: center;
-    gap: 34px;
+    gap: 24px;
 }
 
 .name-image-container p {
@@ -144,13 +144,9 @@ button.close:hover {
     font-size: 18px;
 }
 
-@media screen and (max-width: 1439px) {
- 
-}
+@media screen and (max-width: 1439px) {}
 
-@media screen and (max-width: 1239px) {
- 
-}
+@media screen and (max-width: 1239px) {}
 
 @media screen and (max-width: 720px) {
 
@@ -163,6 +159,15 @@ button.close:hover {
     .team-card-content {
         width: 50%;
         aspect-ratio: 1;
+        padding-left: 24px;
+    }
+
+    .team-card-content p {
+        font-size: 16px;
+    }
+
+    img.arrow {
+        width: 30px !important;
     }
 
     .team-card img {
@@ -181,17 +186,8 @@ button.close:hover {
     }
 
     .popup {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    padding: 24px;
-    overflow:auto;
-    justify-content: center;
-    max-width: 800px;
-    min-height: 300px;
-    background-color: var(--color-green);
-    border-radius: 8px;
-}
+        padding: 24px;
+    }
 
 }
 
