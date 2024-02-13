@@ -131,89 +131,118 @@ li p {
         margin-top: -10px;
         text-align: center;
         transform: translate(-50%);
-        opacity: 1;
         justify-content: center;
         align-items: center;
     }
 
     .kwaliteit1 {
         display: flex;
-        flex-direction: row;
-        opacity: 1;
+
         animation-name: kwaliteit1;
-        animation-duration: 12s;
+        animation-duration: 20s;
         animation-iteration-count: infinite;
-        transition: all 1s;
+        transition: all 0.1s;
     }
 
     @keyframes kwaliteit1 {
         0% {
-            opacity: 1;
+            display: flex;
         }
 
-        33% {
-            opacity: 0;
+        23% {
+            display: flex;
+        }
+
+        24% {
+            display: none;
         }
 
         66% {
-            opacity: 0;
+            display: none;
+        }
+
+        100% {
+            display: none;
         }
 
     }
 
     .kwaliteit2 {
-        display: flex;
-        flex-direction: row;
-        opacity: 0;
+        display: none;
         animation-name: kwaliteit2;
-        animation-duration: 12s;
+        animation-duration: 20s;
         animation-iteration-count: infinite;
-        transition: all 1s;
+        transition: all 0.1s;
     }
 
     @keyframes kwaliteit2 {
         0% {
-            opacity: 0;
+            display: none;
+        }
+
+
+        33% {
+            display: flex;
         }
 
         33% {
-            opacity: 1;
+            display: flex;
         }
 
-        66% {
-            opacity: 0;
+        56% {
+            display: flex;
+        }
+
+        57% {
+            display: none;
+        }
+
+        100% {
+            display: none;
         }
 
     }
 
     .kwaliteit3 {
         display: flex;
-        flex-direction: row;
-        opacity: 0;
+        /* opacity: 0; */
         animation-name: kwaliteit3;
-        animation-duration: 12s;
+        animation-duration: 20s;
         animation-iteration-count: infinite;
-        transition: all 1s;
+        transition: all 0.1s;
     }
 
     @keyframes kwaliteit3 {
         0% {
-            opacity: 0;
+            display: none;
         }
 
         33% {
-            opacity: 0;
+            display: none;
+        }
+
+        65% {
+            display: block;
         }
 
         66% {
-            opacity: 1;
+            display: block;
+        }
+
+        89% {
+            display: block;
+        }
+
+        99% {
+            display: none;
+        }
+
+        100% {
+            display: none;
         }
 
 
     }
-
-
-
 
 }
 </style>
