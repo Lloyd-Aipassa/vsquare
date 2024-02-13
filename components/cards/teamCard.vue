@@ -3,7 +3,7 @@
         <div class="team-card">
             <img loading="lazy" :src="card.Image" class="face-img" alt="Foto team">
             <div class="team-card-content">
-                <p>Felix Hillen</p>
+                <p>{{ card.Name }}</p>
                 <button @click="isOpen = true">Read more <img src="/buttons/arrow.svg" alt=""></button>
             </div>
         </div>
@@ -13,13 +13,12 @@
                 <Transition>
                     <div class="modal" v-show="isOpen">
                         <div class="popup">
-                            <img img loading="lazy" :src="card.Image" class="popup-img" alt="Foto team">
-                            <p>{{ card.p }}</p>
-                            <!-- <img loading="lazy" src="/home/team/Felix.webp" alt="">
-                            <div class="team-card-content">
-                                <p>Felix Hillen</p>
-                            </div> -->
-                            <button @click="isOpen = false">sluiten</button>
+                            <div class="name-image-container">
+                                <img img loading="lazy" :src="card.Image" class="popup-img" alt="Foto team">
+                                <p>{{ card.Name }}</p>
+                            </div>
+                            <p v-html="card.p"></p>
+                            <button class="close" @click="isOpen = false">sluiten</button>
                         </div>
                     </div>
                 </Transition>
@@ -96,13 +95,22 @@ const isOpen = ref(false)
     display: flex;
     flex-direction: column;
     padding: 50px;
-    /* align-items: center; */
+    overflow:auto;
     justify-content: center;
     max-width: 800px;
     min-height: 300px;
     background-color: var(--color-green);
-    box-shadow: 2px 2px 14px rgba(0, 0, 0, 0.9);
     border-radius: 8px;
+}
+
+.name-image-container {
+    display: flex;
+    align-items: center;
+    gap: 34px;
+}
+
+.name-image-container p {
+    font-size: 24px;
 }
 
 .popup button {
@@ -115,12 +123,25 @@ const isOpen = ref(false)
 }
 
 img.popup-img {
-    width: 250px;
+    width: 125px;
+    border-radius: 8px;
 }
 
 .popup p {
     color: #fff;
     margin: 24px 0;
+}
+
+button.close {
+    color: #fff;
+    margin: 24px 0 0;
+    font-size: 18px;
+}
+
+button.close:hover {
+    color: var(--color-light-green);
+    margin: 24px 0 0;
+    font-size: 18px;
 }
 
 @media screen and (max-width: 1439px) {

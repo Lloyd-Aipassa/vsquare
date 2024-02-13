@@ -34,7 +34,7 @@ a {
 
 
 a:hover {
-    color: var(--color-orange);
+    color: var(--color-light-green);
     /* transform: translateY(-3px);   
     transition: transform 300ms ease; */
 }

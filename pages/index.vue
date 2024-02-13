@@ -2,7 +2,7 @@
     <div>
         <Hero :ButtonTekst="ButtonTekst" :Link="Link" :HeroContent="HeroContent" />
         <section class="vegitalian animatie-3">
-            <CardsWhiteCard :ButtonTekst="ButtonTekst2" :Link="Link2" />
+            <CardsWhiteCard :ButtonTekst="ButtonTekst2" :Link="Link2" :WhiteCard="WhiteCard" />
         </section>
         <section class="why-vsqaure">
             <div class="why-vsqaure-container">
@@ -136,17 +136,47 @@
 
 <script setup>
 // ** Header button  **
-const ButtonTekst = 'Interesse? neem contact op'
+const ButtonTekst = 'Questions or more info'
 const Link = '/contact'
 // ** Header button  **
-const ButtonTekst2 = 'Questions or more info'
-const Link2 = '/contact'
+const ButtonTekst2 = 'More about vegitalian '
+const Link2 = '/vegitalian-project'
 
-// ** Reconmendations **
+// ** Hero **
 const HeroContent = [{
     Image: "/hero/header-home.webp",
-    Title: 'THE BEST HEALTHY AND SUSTAINABLE FOOD ON EVERY CORNER',
+    Title: 'THE CHALLENGE',
     p: 'There is a growing momentum for people to switch from animal-based to more sustainable, plant-forward diets.To make this switch, most potential flexitarians need more and more tasty and conveniently available restaurants and deliverers to seduce them.',
+}]
+
+// ** White card **
+const WhiteCard = [{
+    Title: 'THE BEST HEALTHY AND SUSTAINABLE FOOD ON EVERY CORNER',
+    p: '<b>Current out of home (and to the home) options provide for sub-optimal offerings and lack scale, limiting their potential impact</b><br><br> V-SQUARE aims to invest in the high potential plant-forward restaurant chain Vegitalian and help it scale up faster and make its offering even healthier, tastier and more conveniently available at many more places. This way radically more people will be seduced to eat less and less animal-based food and as a result, we will have significant positive impact and can benefit from a huge market opportunity',
+}]
+
+// ** Team **
+const cardTeam = [{
+    Name: "Felix",
+    Image: "/home/team/Felix.webp",
+    p: 'Throughout my very diverse working life I have been involved in and responsible for several high-growth trajectories of companies in their start- and scale-up phase. In my last adventure at The Student Hotel, we grew through start-up, with a new product and business model, to a scale-up. Within 9 years we have developed a 27 hotels portfolio, with 11,000 rooms, in 7 countries, run by 750 people.<br><br> In a previous role, in a fast growing technology company, we have not been successful in the scale-up phase. The lessons learned proved to be very helpful at TSH, as well as in my role at Eden, managing the company through growth as well as through the credit crisis impact.<br><br> Further relevant experiences are in fund structuring, technology, investment management and in corporate finance transactions. And I’m a train diplomat',
+}]
+
+const cardTeam2 = [{
+    Name: "Lucas",
+    Image: "/home/team/Lucas.webp",
+    p: 'My last position was Chief Corporate Services at The Student Hotel (“TSH”). In the 6 years I have worked at TSH I have supported the growth of TSH from a portfolio of 2 hotels open and 1 under construction to a portfolio of 23 hotels (11 under construction) in 7 jurisdictions and 750 staff<br><br> As CCS I was end responsible for the corporate backbone of TSH. I have built and managed various specialized teams such as Legal & Compliance, Treasury & Banking, Risk Management, CSR and Procurement Adding this to my previous experience as a Lawyer (Banking & Finance) and Corporate Banker I can support scale up companies in their growth at various areas of their business.',
+}]
+
+const cardTeam3 = [{
+    Name: "Marcus",
+    Image: "/home/team/Marcus.webp",
+    p: 'Het FoodService Instituut Nederland (FSIN) is een onafhankelijk kennisplatform in de foodsector.',
+}]
+const cardTeam4 = [{
+    Name: "Arjan",
+    Image: "/home/team/Arjan.webp",
+    p: 'Het FoodService Instituut Nederland (FSIN) is een onafhankelijk kennisplatform in de foodsector.',
 }]
 
 // ** Parteners **
@@ -167,24 +197,6 @@ const Partner3 = [{
 }]
 
 
-const cardTeam = [{
-    Image: "/home/team/Felix.webp",
-    p: 'Throughout my very diverse working life I have been involved in and responsible for several high-growth trajectories of companies in their start- and scale-up phase. In my last adventure at The Student Hotel, we grew through start-up, with a new product and business model, to a scale-up. Within 9 years we have developed a 27 hotels portfolio, with 11,000 rooms, in 7 countries, run by 750 people. In a previous role, in a fast growing technology company, we have not been successful in the scale-up phase. The lessons learned proved to be very helpful at TSH, as well as in my role at Eden, managing the company through growth as well as through the credit crisis impact. Further relevant experiences are in fund structuring, technology, investment management and in corporate finance transactions. And I’m a train diplomat',
-}]
-
-const cardTeam2 = [{
-    Image: "/home/team/Lucas.webp",
-    p: 'My last position was Chief Corporate Services at The Student Hotel (“TSH”). In the 6 years I have worked at TSH I have supported the growth of TSH from a portfolio of 2 hotels open and 1 under construction to a portfolio of 23 hotels (11 under construction) in 7 jurisdictions and 750 staff As CCS I was end responsible for the corporate backbone of TSH. I have built and managed various specialized teams such as Legal & Compliance, Treasury & Banking, Risk Management, CSR and Procurement Adding this to my previous experience as a Lawyer (Banking & Finance) and Corporate Banker I can support scale up companies in their growth at various areas of their business.',
-}]
-
-const cardTeam3 = [{
-    Image: "/home/team/Marcus.webp",
-    p: 'Het FoodService Instituut Nederland (FSIN) is een onafhankelijk kennisplatform in de foodsector.',
-}]
-const cardTeam4 = [{
-    Image: "/home/team/Arjan.webp",
-    p: 'Het FoodService Instituut Nederland (FSIN) is een onafhankelijk kennisplatform in de foodsector.',
-}]
 
 
 

@@ -1,13 +1,7 @@
 <template>
-    <div class="card">
-        <h2>THE CHALLENGE</h2>
-        <p> <span>Current out of home (and to the home) options provide for sub-optimal offerings and lack scale, limiting
-                their potential impact</span>
-            V-SQUARE aims to invest in the high potential plant-forward restaurant chain Vegitalian and help it scale
-            up faster and make its offering even healthier, tastier and more conveniently available at many more
-            places. This way radically more people will be seduced to eat less and less animal-based food and as a
-            result, we will have significant positive impact and can benefit from a huge market opportunity
-        </p>
+    <div class="card" v-for="(card, index) in WhiteCard" :key="index">
+        <h2>{{ card.Title }}</h2>
+        <p v-html="card.p"></p>
         <ButtonsMainButton :ButtonTekst="ButtonTekst" :Link="Link" />
     </div>
 </template>
@@ -16,7 +10,15 @@
 const props = defineProps({
     ButtonTekst: String,
     Link: String,
+    WhiteCard: {
+        type: Array,
+        required: true
+    },
 })
+
+
+
+
 
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -50,6 +52,10 @@ onMounted(() => {
 
 .card p {
     margin: 24px 0 36px;
+}
+
+p.test{
+    
 }
 
 .card span {
