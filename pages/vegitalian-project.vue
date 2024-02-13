@@ -2,7 +2,8 @@
     <div>
         <Hero :ButtonTekst="ButtonTekst" :Link="Link" :HeroContent="HeroContent" />
     </div>
-    
+
+    <!-- <CardsTeamCard /> -->
 </template>
 
 <script setup>

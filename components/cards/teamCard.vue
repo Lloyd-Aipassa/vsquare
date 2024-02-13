@@ -1,29 +1,24 @@
 <template>
-    <section class="team-section" v-for="(card, index) in cardOne" :key="index">
-    
-
+    <section class="team-section" v-for="(card, index) in cardTeam" :key="index">
         <div class="team-card">
-            <img loading="lazy" src="/home/team/Felix.webp" alt="">
+            <img loading="lazy" :src="card.Image" class="face-img" alt="Foto team">
             <div class="team-card-content">
                 <p>Felix Hillen</p>
-                <button>Read more <img src="/buttons/arrow.svg" alt=""></button>
+                <button @click="isOpen = true">Read more <img src="/buttons/arrow.svg" alt=""></button>
             </div>
         </div>
 
         <div class="root">
-            <button class="test" @click="isOpen = true">
-                Lees meer <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M17.7071 8.70711C18.0976 8.31658 18.0976 7.68342 17.7071 7.29289L11.3431 0.928931C10.9526 0.538407 10.3195 0.538407 9.92893 0.928931C9.53841 1.31946 9.53841 1.95262 9.92893 2.34314L15.5858 8L9.92893 13.6569C9.53841 14.0474 9.53841 14.6805 9.92893 15.0711C10.3195 15.4616 10.9526 15.4616 11.3431 15.0711L17.7071 8.70711ZM8.74228e-08 9L17 9L17 7L-8.74228e-08 7L8.74228e-08 9Z"
-                        fill="#F89A03" />
-                </svg>
-            </button>
             <Teleport to="body">
                 <Transition>
                     <div class="modal" v-show="isOpen">
                         <div class="popup">
-                            <img :src="card.Image" class="face-img" alt="Foto team">
-                            <p>{{ card.Quote }}</p>
+                            <img img loading="lazy" :src="card.Image" class="popup-img" alt="Foto team">
+                            <p>{{ card.p }}</p>
+                            <!-- <img loading="lazy" src="/home/team/Felix.webp" alt="">
+                            <div class="team-card-content">
+                                <p>Felix Hillen</p>
+                            </div> -->
                             <button @click="isOpen = false">sluiten</button>
                         </div>
                     </div>
@@ -35,7 +30,7 @@
 
 <script setup>
 const props = defineProps({
-    cardOne: {
+    cardTeam: {
         type: Array,
         required: true
     }
@@ -45,7 +40,38 @@ const isOpen = ref(false)
 </script>
 
 <style scoped>
+.team-card {
+    display: flex;
+}
 
+.team-card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding-left: 48px;
+    background-color: var(--color-green);
+    width: 248px;
+}
+
+.team-card-content p {
+    color: var(--color-light-green);
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 600;
+}
+
+.team-card-content button {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: none;
+    background-color: #77817100;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+
+}
 
 .root {
     position: relative;
@@ -74,7 +100,7 @@ const isOpen = ref(false)
     justify-content: center;
     max-width: 800px;
     min-height: 300px;
-    background-color: var(--color-blue);
+    background-color: var(--color-green);
     box-shadow: 2px 2px 14px rgba(0, 0, 0, 0.9);
     border-radius: 8px;
 }
@@ -86,6 +112,10 @@ const isOpen = ref(false)
     padding: 0;
     text-align: left;
 
+}
+
+img.popup-img {
+    width: 250px;
 }
 
 .popup p {
@@ -107,6 +137,23 @@ const isOpen = ref(false)
 }
 
 @media screen and (max-width: 720px) {
+
+
+
+    .team-card {
+        width: 100%;
+    }
+
+    .team-card-content {
+        width: 50%;
+        aspect-ratio: 1;
+    }
+
+    .team-card img {
+        width: 50%;
+        height: auto;
+    }
+
     .recommendation {
         display: flex;
         flex-direction: column;

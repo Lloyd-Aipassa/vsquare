@@ -49,34 +49,10 @@
                 manpower, capital and knowledge to firepower the scale up of Vegitalian
             </p>
             <div class="team">
-                <div class="team-card">
-                    <img loading="lazy" src="/home/team/Felix.webp" width="248" height="248" alt="Felix">
-                    <div class="team-card-content">
-                        <p>Felix Hillen</p>
-                        <button>Read more <img src="/buttons/arrow.svg" alt=""></button>
-                    </div>
-                </div>
-                <div class="team-card">
-                    <img loading="lazy" src="/home/team/Lucas.webp" width="248" height="248" alt="Lucas">
-                    <div class="team-card-content">
-                        <p>Lucas Rijckmans</p>
-                        <button>Read more <img src="/buttons/arrow.svg" alt=""></button>
-                    </div>
-                </div>
-                <div class="team-card">
-                    <img loading="lazy" src="/home/team/Marcus.webp" width="248" height="248" alt="Marcus">
-                    <div class="team-card-content">
-                        <p>Markus Konings</p>
-                        <button>Read more <img src="/buttons/arrow.svg" alt=""></button>
-                    </div>
-                </div>
-                <div class="team-card">
-                    <img loading="lazy" src="/home/team/Arjan.webp" width="248" height="248" alt="Arjan">
-                    <div class="team-card-content">
-                        <p>Arjan Witteveen</p>
-                        <button>Read more <img src="/buttons/arrow.svg" alt=""></button>
-                    </div>
-                </div>
+                <CardsTeamCard :cardTeam="cardTeam" />
+                <CardsTeamCard :cardTeam="cardTeam2" />
+                <CardsTeamCard :cardTeam="cardTeam3" />
+                <CardsTeamCard :cardTeam="cardTeam4" />
             </div>
         </section>
         <div class="woods">
@@ -187,6 +163,26 @@ const Partner2 = [{
 const Partner3 = [{
     ImageBig: "/home/partners/fruit.webp",
     ImageSmall: '/home/partners/foodservice.webp',
+    p: 'Het FoodService Instituut Nederland (FSIN) is een onafhankelijk kennisplatform in de foodsector.',
+}]
+
+
+const cardTeam = [{
+    Image: "/home/team/Felix.webp",
+    p: 'Throughout my very diverse working life I have been involved in and responsible for several high-growth trajectories of companies in their start- and scale-up phase. In my last adventure at The Student Hotel, we grew through start-up, with a new product and business model, to a scale-up. Within 9 years we have developed a 27 hotels portfolio, with 11,000 rooms, in 7 countries, run by 750 people. In a previous role, in a fast growing technology company, we have not been successful in the scale-up phase. The lessons learned proved to be very helpful at TSH, as well as in my role at Eden, managing the company through growth as well as through the credit crisis impact. Further relevant experiences are in fund structuring, technology, investment management and in corporate finance transactions. And I’m a train diplomat',
+}]
+
+const cardTeam2 = [{
+    Image: "/home/team/Lucas.webp",
+    p: 'My last position was Chief Corporate Services at The Student Hotel (“TSH”). In the 6 years I have worked at TSH I have supported the growth of TSH from a portfolio of 2 hotels open and 1 under construction to a portfolio of 23 hotels (11 under construction) in 7 jurisdictions and 750 staff As CCS I was end responsible for the corporate backbone of TSH. I have built and managed various specialized teams such as Legal & Compliance, Treasury & Banking, Risk Management, CSR and Procurement Adding this to my previous experience as a Lawyer (Banking & Finance) and Corporate Banker I can support scale up companies in their growth at various areas of their business.',
+}]
+
+const cardTeam3 = [{
+    Image: "/home/team/Marcus.webp",
+    p: 'Het FoodService Instituut Nederland (FSIN) is een onafhankelijk kennisplatform in de foodsector.',
+}]
+const cardTeam4 = [{
+    Image: "/home/team/Arjan.webp",
     p: 'Het FoodService Instituut Nederland (FSIN) is een onafhankelijk kennisplatform in de foodsector.',
 }]
 
@@ -305,10 +301,10 @@ onMounted(() => {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    max-width: 1100px;
+    max-width: 1068px;
     margin: 0 auto 80px;
-    grid-template-columns: 1fr 1fr;
     gap: 24px;
+    row-gap: 24px;
 }
 
 #team h2 {

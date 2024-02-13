@@ -1,24 +1,17 @@
 <template>
     <section class="recommendation" v-for="(card, index) in cardOne" :key="index">
-        <!-- <div class="left">
+        <div class="left">
             <img :src="card.Image" width="64" height="64" class="face-img" :alt="card.Name">
             <div class="right">
                 <h2>{{ card.Name }}</h2>
                 <p class="title"> {{ card.Title }} </p>
                 <p class="function"> {{ card.Function }} </p>
             </div>
-        </div> -->
-        <!-- <div class="q">
-            <p><i class="short-quote" v-html="card.ShortQuote"></i></p>
-        </div> -->
-
-        <div class="team-card">
-            <img loading="lazy" src="/home/team/Felix.webp" alt="">
-            <div class="team-card-content">
-                <p>Felix Hillen</p>
-                <button>Read more <img src="/buttons/arrow.svg" alt=""></button>
-            </div>
         </div>
+        <div class="q">
+            <p><i class="short-quote" v-html="card.ShortQuote"></i></p>
+        </div>
+
 
         <div class="root">
             <button class="test" @click="isOpen = true">
