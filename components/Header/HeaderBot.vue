@@ -300,7 +300,7 @@ p:hover p {
     }
 
     .container {
-        padding: 8px 24px 0;
+        padding: 16px 24px 0;
     }
 
 
