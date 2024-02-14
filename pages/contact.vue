@@ -7,15 +7,15 @@
                     <div class="form">
                         <form id="contact-form" ref="form" @submit.prevent="sendEmail">
                             <input type="hidden" name="contact_number" />
-                            <label>Naam</label>
+                            <label>Name</label>
                             <input type="text" name="name" id="name-form" required />
                             <label>E-mail</label>
                             <input type="email" v-model="email" name="email" required />
-                            <label>Telefoonnummer</label>
+                            <label>Phone number</label>
                             <input type="text" name="phone" required />
-                            <label>Organisatie</label>
+                            <label>Organisation</label>
                             <input type="text" name="company" id="organisatie" required />
-                            <label>Bericht</label>
+                            <label>Message</label>
                             <textarea rows="5" name="message"></textarea><br>
                             <input type="submit" value="Verstuur" />
                         </form>
@@ -28,30 +28,13 @@
                         </div>
                         <div class="card">
                             <!-- <img src="/contact/tel.svg" width="46" height="56" alt=""> -->
-                            <p>+31 63 02 61 684 <br><span>Maandag t/m vrijdag 09.00 - 17.00</span></p>
+                            <p>+31 63 02 61 684 <br><span>Monday to Friday 09:00 - 17:00</span></p>
                         </div>
                         <div class="card">
                             <!-- <img src="/contact/envelop.svg" width="46" height="56" alt=""> -->
-                            <p>lucas@v-square.eu<br><span>Reactie binnen 24 uur</span></p>
+                            <p>lucas@v-square.eu<br><span>Response within 24 hours.</span></p>
                         </div>
-                        <div class="card">
-                            <!-- <img src="/contact/social.svg" width="99" height="45" alt=""> -->
-                            <div class="content-last-card">
-                                <span>
-                                    <!-- <img src="/contact/linkedin.svg" width="24" height="24" alt="Linkin"> -->
-                                    <a href="https://www.linkedin.com/company/rocketsourcers">
-                                        <p>Linkedin</p>
-                                    </a>
-                                </span>
 
-                                <span>
-                                    <!-- <img src="/contact/instagram.svg" width="24" height="24" alt="Instagram"> -->
-                                    <a href="https://www.instagram.com/rocketsourcers">
-                                        <p>Instagram</p>
-                                    </a>
-                                </span>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -95,8 +78,8 @@ h1 {
 
 
 #contact {
-    margin: 0 auto 50px;
-    padding: 0 200px;
+    margin: 0 auto;
+    padding: 0 200px 80px;
     background-color: #87B16D1A;
 }
 
@@ -193,85 +176,61 @@ form input[type="submit"]:active {
     color: var(--color-orange);
 }
 
-.content-last-card {
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    gap: 10px;
-}
-
-.content-last-card span {
-    margin-top: 10px;
-    display: flex;
-    align-items: bottom;
-    gap: 5px;
-}
-
-.content-last-card p {
-    padding-top: 2px;
-}
-
-.content-last-card a {
-    text-decoration: none;
-}
 
 
-#faq {
-    position: relative;
-    z-index: 5;
-    max-width: 1200px;
-    margin: 0 auto 50px;
-    display: flex;
-    flex-direction: column;
-    border-radius: 8px;
-}
 
-#faq img {
-    margin: 0 auto -58px;
-}
 
 @media screen and (max-width: 1439px) {
     #contact {
-        max-width: 1080px;
-        margin: 0 auto 50px;
-        display: flex;
-        gap: 20px;
+        margin: 0 auto;
+        padding: 0 96px 80px;
+        background-color: #87B16D1A;
     }
 
-    .hero-orange-left {
-        position: absolute;
-        top: 450px;
-        left: 0;
-        width: 10vw;
+    .contact-container {
+        display: flex;
+        gap: 20px;
     }
 }
 
 @media screen and (max-width: 1239px) {
     #contact {
-        max-width: 780px;
-        margin: 0 auto 50px;
+        margin: 0 auto;
+        padding: 0 96px 80px;
+        background-color: #87B16D1A;
+    }
+
+    .contact-container {
         display: flex;
+        flex-direction: column;
         gap: 20px;
     }
 
-    .hero-orange-left {
-        position: absolute;
-        top: 360px;
-        left: 0;
-        width: 9vw;
+    .form {
+        width: 100%;
+        background-color: #fff;
+        align-self: stretch;
+        box-shadow: 2px 2px 14px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        padding: 48px 64px;
+        z-index: 5;
     }
 
 
-    #faq {
-        max-width: 780px;
+    .cards {
+        width: 100%;
+        margin: 0 auto;
     }
 
-    #faq img {
-        margin: 0 auto -56px;
-        width: 90%;
-        height: auto;
-        text-align: center;
+    .content-last-card {
+        margin-top: 10px;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        gap: 20px;
     }
+
+
 }
 
 
@@ -286,10 +245,21 @@ form input[type="submit"]:active {
     }
 
     .contact-container {
-        margin: 0 auto 50px;
+        margin: 0 auto 0px;
         width: calc(100% - 48px);
         display: flex;
         flex-direction: column;
+        gap: 20px;
+    }
+
+    #contact {
+        margin: 0 auto;
+        padding: 0 0 50px;
+        background-color: #87B16D1A;
+    }
+
+    .contact-container {
+        display: flex;
         gap: 20px;
     }
 
@@ -300,6 +270,7 @@ form input[type="submit"]:active {
         line-height: 110%;
         max-width: 390px;
         margin-left: 24px;
+        padding: 66px 0 24px;
     }
 
 

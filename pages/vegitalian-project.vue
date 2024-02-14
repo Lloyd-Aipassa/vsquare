@@ -52,7 +52,7 @@ const HeroContent = [{
 
 // ** White card button  **
 const ButtonTekst2 = 'More about vegitalian '
-const Link2 = '/vegitalian-project'
+const Link2 = 'https://vegitalian.com/'
 
 // ** White card **
 const WhiteCard = [{
