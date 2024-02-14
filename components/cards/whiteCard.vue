@@ -61,6 +61,11 @@ onMounted(() => {
     font-weight: 500;
 }
 
+ul {
+
+list-style-type: circle;
+}
+
 @media screen and (max-width: 720px) {
     .card {
         padding: 24px;

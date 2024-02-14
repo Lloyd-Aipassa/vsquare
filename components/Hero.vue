@@ -6,7 +6,13 @@
         <div class="hero-contant-container">
             <div class="hero-content animatie-2">
                 <h1 id="healthy">{{ content.Title }}</h1>
-                <p v-html="content.p"></p>
+                <slot>
+                    <ul class="bullets">
+                        <li>
+                            <p>test</p>
+                        </li>
+                    </ul>
+                </slot>
             </div>
             <div class="animatie-2">
                 <ButtonsMainButton :ButtonTekst="ButtonTekst" :Link="Link" />
@@ -33,6 +39,7 @@ onMounted(() => {
 </script>
 
 <style scoped>
+
 .hero {
     padding: 0px 0 80px 200px;
     height: 100vh;
@@ -66,9 +73,7 @@ onMounted(() => {
     width: 100%;
 }
 
-li {
-    list-style-type: circle;
-}
+
 
 @media screen and (max-width: 1440px) {
     .hero {

@@ -1,6 +1,14 @@
 <template>
     <div>
-        <Hero :ButtonTekst="ButtonTekst" :Link="Link" :HeroContent="HeroContent" />
+        <Hero :ButtonTekst="ButtonTekst" :Link="Link" :HeroContent="HeroContent">
+            <ul class="bullets">
+                <li>
+                    <p>There is a growing momentum for people to switch from animal-based to more sustainable, plant-forward
+                        diets.To make this switch, most potential flexitarians need more and more tasty and conveniently
+                        available restaurants and deliverers to seduce them.</p>
+                </li>
+            </ul>
+        </Hero>
         <section class="vegitalian animatie-3">
             <CardsWhiteCard :ButtonTekst="ButtonTekst2" :Link="Link2" :WhiteCard="WhiteCard" />
         </section>
@@ -43,6 +51,7 @@
                 <img class="why-groente why-small" src="/home/whyVsquare/tangerine.webp" alt="groente">
             </div>
         </section>
+
         <section id="team">
             <h2>V-SQUARE TEAM</h2>
             <p class="team-sub-title">V-SQUARE is an impact-driven collective that conjoins the required experience,
@@ -148,7 +157,6 @@ const HeroContent = [{
     Image: "/hero/header-home.webp",
     MobImage: "/hero/vs-hero-mobile.webp",
     Title: 'THE BEST HEALTHY AND SUSTAINABLE FOOD ON EVERY CORNER',
-    p: 'There is a growing momentum for people to switch from animal-based to more sustainable, plant-forward diets.To make this switch, most potential flexitarians need more and more tasty and conveniently available restaurants and deliverers to seduce them.',
 }]
 
 // ** White card **
@@ -251,6 +259,16 @@ onMounted(() => {
 </script>
 
 <style scoped>
+ul.bullets {
+    list-style-type: none;
+    padding-left: 0px;
+}
+
+ul.bullets p {
+    max-width: 817px;
+    margin: 24px 0 40px;
+}
+
 .vegitalian {
     background-image: url("/vegitalian/vegitalian-pizzabar.webp");
     background-size: cover;
@@ -606,6 +624,12 @@ p.sc-sub-title-bottom-text {
 
 
 @media screen and (max-width: 720px) {
+
+    /************** Hero ************/
+    ul.bullets p {
+        margin: 24px 0;
+        width: 100%;
+    }
 
     .vegitalian {
         background-image: url("/vegitalian/vegitalian-pizzabar.webp");
