@@ -1,7 +1,7 @@
 <template>
     <section id="contact">
-        <h2>Interesse?</h2>
-        <h3>BEKIJK ONZE SERVICES</h3>
+        <h2>Interested?</h2>
+        <h3>PLEASE REACH OUT</h3>
         <ContactBlock />
     </section>
 </template>

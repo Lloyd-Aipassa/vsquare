@@ -25,7 +25,6 @@
 </template>
 
 <style scoped>
-
 a.meer-info {
     z-index: 3;
     position: relative;
@@ -33,6 +32,7 @@ a.meer-info {
     width: 100%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 18px 24px;
     color: #fff;
     text-decoration: none;
@@ -44,6 +44,7 @@ a.meer-info {
 a.meer-info:hover {
     color: var(--color-light-green);
 }
+
 
 @media screen and (max-width: 600px) {}
 </style>

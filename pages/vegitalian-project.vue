@@ -1,32 +1,40 @@
 <template>
     <div>
-        <Hero :ButtonTekst="ButtonTekst" :Link="Link" :HeroContent="HeroContent">
-            <ul class="bullets">
-                <li>
-                    <p><span>V-SQUARE has joined forces with the Vegitalian team and is highly motivated to:</span></p>
-                </li>
-                <li>
-                    <p>Built a European power-brand for the best, sustainable Italian food</p>
-                </li>
-                <li>
-                    <p>Make radically more impact</p>
-                </li>
-                <li>
-                    <p>Unlock the full potential of Vegitalian</p>
-                </li>
-                <li>
-                    <p>Create value for all stakeholders</p>
-                </li>
-                <li>
-                    <p>Work hard with lot’s of excitement, new learnings, fun and pride!</p>
-                </li>
-            </ul>
-        </Hero>
+        <section class="hero">
+            <Hero :ButtonTekst="ButtonTekst" :Link="Link" :HeroContent="HeroContent">
+                <ul class="bullets">
+                    <li>
+                        <p><span>V-SQUARE has joined forces with the Vegitalian team and is highly motivated to:</span></p>
+                    </li>
+                    <li>
+                        <p>Built a European power-brand for the best, sustainable Italian food</p>
+                    </li>
+                    <li>
+                        <p>Make radically more impact</p>
+                    </li>
+                    <li>
+                        <p>Unlock the full potential of Vegitalian</p>
+                    </li>
+                    <li>
+                        <p>Create value for all stakeholders</p>
+                    </li>
+                    <li>
+                        <p>Work hard with lot’s of excitement, new learnings, fun and pride!</p>
+                    </li>
+                </ul>
+            </Hero>
+        </section>
+        <section id="about-vegiatialan">
+            <img src="/vegitalian/PizzaWijn.webp" alt="girl eating vegan pizza">
+            <CardsWhiteCard :ButtonTekst="ButtonTekst2" :Link="Link2" :WhiteCard="WhiteCard" />
+        </section>
+        <section id="contact-block">
+            <div class="contact-block-container">
+                <ContactAlgemeen />
+            </div>
+            <img src="/vegitalian/CinnamonHand.webp" alt="cup cake">
+        </section>
     </div>
-    <section id="about-vegiatialan">
-        <img src="/vegitalian/PizzaWijn.webp" alt="girl eating vegan pizza">
-        <CardsWhiteCard :ButtonTekst="ButtonTekst2" :Link="Link2" :WhiteCard="WhiteCard" />
-    </section>
 </template>
 
 <script setup>
@@ -38,7 +46,7 @@ const Link = '/contact'
 const HeroContent = [{
     Image: "/vegitalian/vegi-header.webp",
     Title: 'THE VEGITALIAN PROJECT',
-    MobImage: "/vegitalian/vegi-header.webp",
+    MobImage: "/vegitalian/vegi-header-mob.webp",
 }]
 
 // ** White card button  **
@@ -53,6 +61,11 @@ const WhiteCard = [{
 </script>
 
 <style scoped>
+.hero {
+    padding: 0 0 80px 200px;
+    /* height: 100vh; */
+}
+
 ul.bullets {
     list-style-type: circle;
     padding-left: 20px;
@@ -85,24 +98,90 @@ ul.bullets p span {
     padding: 80px 200px;
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: center;
 }
 
 #about-vegiatialan img {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    left: 200px;
+    margin-right: -80px;
 }
 
-/************** Mobile ************/
+#contact-block {
+    padding: 0 200px 80px;
+    margin: 80px auto 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+#contact-block img {
+    margin-left: -154px;
+}
+
+#contact-block .contact-block-container {
+    align-self: center;
+}
+
+
+/************** 13 ing ************/
+
+@media screen and (max-width: 1440px) {
+
+    /************** Hero ************/
+    .hero {
+        padding: 18px 0 80px 96px;
+        height: fit-content;
+    }
+
+    /************** About vegiatialan ************/
+
+    #about-vegiatialan {
+        padding: 80px 96px;
+    }
+
+    /************** Contact ************/
+
+    #contact-block {
+        padding: 0 96px 80px;
+        margin: 80px auto 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+/************** Mobile ************/
 
 @media screen and (max-width: 720px) {
 
     /************** Hero ************/
+    .hero {
+        padding: 0;
+        height: fit-content;
+    }
+
     ul.bullets p {
         width: 100%;
+    }
+
+    #contact-block {
+        background-color: #87B16D1A;
+        padding: 0 0px 10px;
+        margin: 80px auto 0;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #contact-block img {
+        width: 100%;
+        margin-left: 0;
+        margin-bottom: -50px;
+    }
+
+    #contact-block .contact-block-container {
+        align-self: center;
     }
 }
 </style>

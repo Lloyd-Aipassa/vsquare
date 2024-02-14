@@ -761,8 +761,8 @@ p.sc-sub-title-bottom-text {
     .network {
         position: absolute;
         top: 43%;
-        right: 25%;
-        font-size: 55px;
+        right: 15%;
+        font-size: 40px;
         font-weight: 600;
     }
 
@@ -770,15 +770,15 @@ p.sc-sub-title-bottom-text {
         position: absolute;
         top: 10%;
         left: 15%;
-        font-size: 40px;
+        font-size: 30px;
         font-weight: 600;
     }
 
     .simple {
         position: absolute;
         top: 35%;
-        left: 39%;
-        font-size: 60px;
+        left: 30%;
+        font-size: 35px;
         font-weight: 600;
     }
 
@@ -786,7 +786,7 @@ p.sc-sub-title-bottom-text {
         position: absolute;
         top: 23%;
         left: 22%;
-        font-size: 40px;
+        font-size: 25px;
         font-weight: 600;
     }
 
@@ -800,17 +800,17 @@ p.sc-sub-title-bottom-text {
 
     .pragmatic {
         position: absolute;
-        top: 60%;
-        left: 25%;
-        font-size: 50px;
+        top: 65%;
+        left: 45%;
+        font-size: 35px;
         font-weight: 600;
     }
 
     .energy {
         position: absolute;
         top: 15%;
-        left: 35%;
-        font-size: 50px;
+        left: 45%;
+        font-size: 40px;
         font-weight: 600;
     }
 
