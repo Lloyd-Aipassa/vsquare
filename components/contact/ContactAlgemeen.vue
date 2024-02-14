@@ -13,8 +13,10 @@
     flex-direction: column;
     justify-content: center;
     position: relative;
-    max-width: 500px;
+    width: 100%;
+    /* max-width: 500px; */
     background: var(--color-gradient);
+    background: linear-gradient(266.72deg, #596651 0%, #899284 99.03%);
     padding: 72px;
     align-self: flex-start;
     height: 450px;
@@ -41,7 +43,7 @@ h3 {
 @media screen and (max-width: 720px) {
     #contact {
         width: 100%;
-        padding: 24px 24px;
+        padding: 40px;
         margin-bottom: 40px;
         height: 385px;
     }

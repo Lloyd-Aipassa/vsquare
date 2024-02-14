@@ -778,7 +778,7 @@ p.sc-sub-title-bottom-text {
         position: absolute;
         top: 35%;
         left: 30%;
-        font-size: 35px;
+        font-size: 45px;
         font-weight: 600;
     }
 
@@ -905,6 +905,7 @@ p.sc-sub-title-bottom-text {
 
     #contact-block .contact-block-container {
         align-self: center;
+        padding: 00px;
     }
 
 

@@ -166,7 +166,7 @@ ul.bullets p span {
 
     #contact-block {
         background-color: #87B16D1A;
-        padding: 0 0px 10px;
+        padding: 0 0 10px;
         margin: 80px auto 0;
         display: flex;
         flex-direction: column-reverse;
