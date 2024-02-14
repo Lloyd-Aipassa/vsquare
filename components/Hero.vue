@@ -9,7 +9,7 @@
                 <slot>
                     <ul class="bullets">
                         <li>
-                            <p>test</p>
+                            <p>content</p>
                         </li>
                     </ul>
                 </slot>
@@ -39,7 +39,6 @@ onMounted(() => {
 </script>
 
 <style scoped>
-
 .hero {
     padding: 0px 0 80px 200px;
     height: 100vh;
