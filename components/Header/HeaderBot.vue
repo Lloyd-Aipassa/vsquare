@@ -175,47 +175,12 @@ p {
 
 
 a:hover p {
-    color: var(--color-orange);
+    color: var(--color-green);
 }
 
 p:hover p {
     color: var(--color-orange);
 }
-
-.diensten-container {
-    position: relative;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    padding-bottom: 20px;
-    margin-bottom: -20px;
-}
-
-.diensten-container:hover .drop-down {
-    display: flex;
-}
-
-.diensten-container:hover svg {
-    transform: rotate(180deg);
-}
-
-.drop-down {
-    display: none;
-    position: absolute;
-    top: 30px;
-    left: 50%;
-    transform: translatex(-50%);
-    background-color: #fff;
-    width: 255px;
-    /* height: 140px; */
-    padding: 40px;
-    flex-direction: column;
-    /* justify-content: center; */
-    gap: 34px;
-    border-radius: 8px;
-    box-shadow: 2px 2px 14px 0px rgba(0, 0, 0, 0.10);
-}
-
 
 
 
@@ -353,11 +318,11 @@ p:hover p {
 
 }
 
-@media screen and (max-width: 400px) {
+/* @media screen and (max-width: 400px) {
     .slider li {
         height: 70px;
     }
-}
+} */
 
 @media screen and (max-width: 350px) {
     .slider li {
@@ -403,7 +368,7 @@ p:hover p {
 /* color active links in nav */
 
 .router-link-exact-active p {
-    color: var(--color-orange);
+    color: var(--color-green);
     font-weight: 600;
 }
 </style>

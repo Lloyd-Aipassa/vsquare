@@ -127,7 +127,7 @@ ul.bullets p span {
 }
 
 
-/************** 13 ing ************/
+/************** 13 inch ************/
 
 @media screen and (max-width: 1440px) {
 
@@ -155,6 +155,31 @@ ul.bullets p span {
 }
 
 
+/************** tablet ************/
+
+@media screen and (max-width: 1240px) {
+    #about-vegiatialan {
+        position: relative;
+        height: 100%;
+        background-color: #87B16D1A;
+        padding: 0px 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #about-vegiatialan img {
+        margin-right: 0px;
+        margin-bottom: -150px;
+        width: 100%;
+    }
+
+    .mob {
+        display: none;
+    }
+}
+
 /************** Mobile ************/
 
 @media screen and (max-width: 720px) {
@@ -165,9 +190,12 @@ ul.bullets p span {
         height: fit-content;
     }
 
+
     ul.bullets p {
         width: 100%;
     }
+
+    /************** About vegiatialan ************/
 
     #about-vegiatialan {
         position: relative;
