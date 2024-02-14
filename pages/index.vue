@@ -1,14 +1,17 @@
 <template>
     <div>
-        <Hero :ButtonTekst="ButtonTekst" :Link="Link" :HeroContent="HeroContent">
-            <ul class="bullets">
-                <li>
-                    <p>There is a growing momentum for people to switch from animal-based to more sustainable, plant-forward
-                        diets.To make this switch, most potential flexitarians need more and more tasty and conveniently
-                        available restaurants and deliverers to seduce them.</p>
-                </li>
-            </ul>
-        </Hero>
+        <section class="hero">
+            <Hero :ButtonTekst="ButtonTekst" :Link="Link" :HeroContent="HeroContent">
+                <ul class="bullets">
+                    <li>
+                        <p>There is a growing momentum for people to switch from animal-based to more sustainable,
+                            plant-forward
+                            diets.To make this switch, most potential flexitarians need more and more tasty and conveniently
+                            available restaurants and deliverers to seduce them.</p>
+                    </li>
+                </ul>
+            </Hero>
+        </section>
         <section class="vegitalian animatie-3">
             <CardsWhiteCard :ButtonTekst="ButtonTekst2" :Link="Link2" :WhiteCard="WhiteCard" />
         </section>
@@ -148,9 +151,7 @@
 // ** Header button  **
 const ButtonTekst = 'Questions or more info'
 const Link = '/contact'
-// ** Header button  **
-const ButtonTekst2 = 'More about vegitalian '
-const Link2 = '/vegitalian-project'
+
 
 // ** Hero **
 const HeroContent = [{
@@ -158,6 +159,10 @@ const HeroContent = [{
     MobImage: "/hero/vs-hero-mobile.webp",
     Title: 'THE BEST HEALTHY AND SUSTAINABLE FOOD ON EVERY CORNER',
 }]
+
+// ** White card button  **
+const ButtonTekst2 = 'More about vegitalian '
+const Link2 = '/vegitalian-project'
 
 // ** White card **
 const WhiteCard = [{
@@ -259,6 +264,11 @@ onMounted(() => {
 </script>
 
 <style scoped>
+.hero {
+    padding: 0 0 130px 200px;
+    /* height: 100vh; */
+}
+
 ul.bullets {
     list-style-type: none;
     padding-left: 0px;
@@ -568,6 +578,11 @@ p.sc-sub-title-bottom-text {
 }
 
 @media screen and (max-width: 1440px) {
+    .hero {
+        padding: 18px 0 80px 96px;
+        height: fit-content;
+    }
+
     .vegitalian {
         background-image: url("/vegitalian/vegitalian-pizzabar.webp");
         padding: 96px 0 96px 96px;
@@ -626,6 +641,11 @@ p.sc-sub-title-bottom-text {
 @media screen and (max-width: 720px) {
 
     /************** Hero ************/
+    .hero {
+        padding: 0;
+        height: fit-content;
+    }
+
     ul.bullets p {
         margin: 24px 0;
         width: 100%;

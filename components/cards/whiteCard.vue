@@ -46,8 +46,9 @@ onMounted(() => {
 <style scoped>
 .card {
     background-color: #fff;
-    max-width: 650px;
+    max-width: 740px;
     padding: 80px;
+    box-shadow: 2px 4px 10px 0px #00000026;
 }
 
 .card p {
@@ -63,7 +64,7 @@ onMounted(() => {
 
 ul {
 
-list-style-type: circle;
+    list-style-type: circle;
 }
 
 @media screen and (max-width: 720px) {

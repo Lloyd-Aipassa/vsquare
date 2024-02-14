@@ -23,21 +23,32 @@
             </ul>
         </Hero>
     </div>
+    <section id="about-vegiatialan">
+        <img src="/vegitalian/PizzaWijn.webp" alt="girl eating vegan pizza">
+        <CardsWhiteCard :ButtonTekst="ButtonTekst2" :Link="Link2" :WhiteCard="WhiteCard" />
+    </section>
 </template>
 
 <script setup>
 // ** Header button  **
-const ButtonTekst = 'Interesse? neem contact op'
+const ButtonTekst = 'Questions or more info'
 const Link = '/contact'
-// ** Header button  **
-const ButtonTekst2 = 'Questions or more info'
-const Link2 = '/contact'
 
 // ** Reconmendations **
 const HeroContent = [{
     Image: "/vegitalian/vegi-header.webp",
     Title: 'THE VEGITALIAN PROJECT',
     MobImage: "/vegitalian/vegi-header.webp",
+}]
+
+// ** White card button  **
+const ButtonTekst2 = 'More about vegitalian '
+const Link2 = '/vegitalian-project'
+
+// ** White card **
+const WhiteCard = [{
+    Title: 'ABOUT THE VEGITALIAN',
+    p: 'Vegitalian is a vision driven food concept. Vegitalian serves delicious plant forward modern Italian food. Founded In 2020, Vegitalian has grown into a modern Italian restaurant; a warm and loving place to eat consciously without concessions, on flavor, quality and experience. In this bold contemporary kitchen, a whole new experience of plant-based and vegetarian food has been created. <br><br>Vegitalian has developed into a brand that inspires people to care about food, themselves and the planet. A brand that attracts and connects a beautiful diversity of like-minded people. And above all, a brand that never stops spreading the word of sustainability, with colorful flavors and heavenly recipes.',
 }]
 </script>
 
@@ -63,6 +74,25 @@ ul.bullets p span {
     list-style-type: none;
     font-size: 16px;
     font-weight: 600;
+}
+
+/************** About vegiatialan ************/
+
+#about-vegiatialan {
+    position: relative;
+    min-height: 902px;
+    background-color: #87B16D1A;
+    padding: 80px 200px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#about-vegiatialan img {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 200px;
 }
 
 /************** Mobile ************/

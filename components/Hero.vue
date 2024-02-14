@@ -1,5 +1,5 @@
 <template>
-    <section class="hero" v-for="(content, index) in HeroContent" :key="index">
+    <div class="hero-container" v-for="(content, index) in HeroContent" :key="index">
         <img :src="content.Image" alt="Header imges of vegan food" class="desk animate-right-left">
         <img :src="content.MobImage" alt="Header imges of vegan food" class="mob animate-right-left">
         <!-- alt="Header imges of vegan food" class="animate-right-left"> -->
@@ -18,7 +18,7 @@
                 <ButtonsMainButton :ButtonTekst="ButtonTekst" :Link="Link" />
             </div>
         </div>
-    </section>
+    </div>
 </template>
 
 <script setup>
@@ -39,12 +39,7 @@ onMounted(() => {
 </script>
 
 <style scoped>
-.hero {
-    padding: 0px 0 80px 200px;
-    height: 100vh;
-}
-
-.hero .mob {
+.hero-container .mob {
     display: none;
 }
 
@@ -58,41 +53,38 @@ onMounted(() => {
     transition: all 1.5s;
 }
 
-.hero h1 {
+.hero-container h1 {
     max-width: 1300px;
     margin-top: 40px;
 }
 
-.hero p {
+.hero-container p {
     max-width: 817px;
     margin: 24px 0 40px;
 }
 
-.hero img {
+.hero-container img {
     width: 100%;
 }
 
 
 
 @media screen and (max-width: 1440px) {
-    .hero {
-        padding: 18px 0 80px 96px;
-        height: fit-content;
-    }
+   
 }
 
 @media screen and (max-width: 1240px) {}
 
 @media screen and (max-width: 720px) {
-    .hero {
+    .hero-container {
         padding: 0;
     }
 
-    .hero .mob {
+    .hero-container .mob {
         display: block;
     }
 
-    .hero .desk {
+    .hero-container .desk {
         display: none;
     }
 
@@ -100,12 +92,12 @@ onMounted(() => {
         padding: 24px;
     }
 
-    .hero h1 {
+    .hero-container h1 {
         max-width: 1300px;
         margin-top: 26px;
     }
 
-    .hero p {
+    .hero-container p {
         margin: 24px 0;
         width: 100%;
     }

@@ -225,10 +225,9 @@ p:hover p {
 
 @media screen and (max-width: 1440px) {
     .container {
-
-        padding: 0 96px;
-
+        padding: 20px 96px;
     }
+
 
     .nav-desktop ul {
         gap: 40px;
@@ -236,9 +235,6 @@ p:hover p {
 }
 
 @media screen and (max-width: 1239px) {
-    .container {
-        max-width: 785px;
-    }
 
     img {
         width: 180px;
