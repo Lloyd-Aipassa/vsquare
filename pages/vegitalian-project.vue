@@ -25,7 +25,8 @@
             </Hero>
         </section>
         <section id="about-vegiatialan">
-            <img src="/vegitalian/PizzaWijn.webp" alt="girl eating vegan pizza">
+            <img src="/vegitalian/PizzaWijn.webp" class="desk" alt="girl eating vegan pizza">
+            <img src="/vegitalian/PizzaWijn-mob.webp" class="mob" alt="girl eating vegan pizza">
             <CardsWhiteCard :ButtonTekst="ButtonTekst2" :Link="Link2" :WhiteCard="WhiteCard" />
         </section>
         <section id="contact-block">
@@ -105,6 +106,10 @@ ul.bullets p span {
     margin-right: -80px;
 }
 
+.mob {
+    display: none;
+}
+
 #contact-block {
     padding: 0 200px 80px;
     margin: 80px auto 0;
@@ -164,10 +169,38 @@ ul.bullets p span {
         width: 100%;
     }
 
+    #about-vegiatialan {
+        position: relative;
+        height: 100%;
+        background-color: #87B16D1A;
+        padding: 302px 24px 200px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #about-vegiatialan img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin: 0;
+        width: 100%;
+    }
+
+    .mob {
+        display: block;
+    }
+
+    .desk {
+        display: none;
+    }
+
+
     #contact-block {
         background-color: #87B16D1A;
         padding: 0 0 10px;
-        margin: 80px auto 0;
+        margin: 0px auto 0;
         display: flex;
         flex-direction: column-reverse;
         justify-content: center;
