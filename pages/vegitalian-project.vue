@@ -110,6 +110,10 @@ ul.bullets p span {
     display: none;
 }
 
+
+/************** Contact ************/
+
+
 #contact-block {
     padding: 0 200px 80px;
     margin: 80px auto 0;
@@ -172,12 +176,34 @@ ul.bullets p span {
 
     #about-vegiatialan img {
         margin-right: 0px;
-        margin-bottom: -450px;
-        width: 50%;
+        margin-bottom: -250px;
+        width: 80%;
     }
 
     .mob {
         display: none;
+    }
+
+    /************** Contact ************/
+
+
+    #contact-block {
+        padding: 0 00px 80px;
+        margin: 80px auto 0;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #contact-block img {
+        margin-left: 0px;
+        margin-bottom: -100px;
+        margin: 53px 0 -100px 0;
+    }
+
+    #contact-block .contact-block-container {
+        align-self: center;
     }
 }
 
