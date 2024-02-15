@@ -192,7 +192,8 @@ form input[type="submit"]:active {
 }
 
 .card span {
-    color: var(--color-orange);
+    color: var(--color-green);
+    font-size: 14px;
 }
 
 
