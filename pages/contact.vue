@@ -313,7 +313,7 @@ form input[type="submit"]:active {
 
     form input[type="submit"] {
         margin-top: 20px;
-        width: 50%;
+        width: 100%;
 
     }
 
@@ -328,6 +328,20 @@ form input[type="submit"]:active {
         align-items: flex-end;
         justify-content: center;
         gap: 20px;
+    }
+
+    .button {
+        margin-top: 0px;
+        position: relative;
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .button img {
+        position: absolute;
+        top: 50%;
+        right: 40px;
     }
 
 }

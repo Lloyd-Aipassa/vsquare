@@ -45,9 +45,9 @@ const Link = '/contact'
 
 // ** Reconmendations **
 const HeroContent = [{
-    Image: "/vegitalian/vegi-header.webp",
+    Image: "/vegitalian/Vegi-header.webp",
     Title: 'THE VEGITALIAN PROJECT',
-    MobImage: "/vegitalian/vegi-header-mob.webp",
+    MobImage: "/vegitalian/Vegi-header-mob.webp",
 }]
 
 // ** White card button  **
