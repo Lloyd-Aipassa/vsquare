@@ -69,9 +69,7 @@ onMounted(() => {
 
 
 
-@media screen and (max-width: 1440px) {
-   
-}
+@media screen and (max-width: 1440px) {}
 
 @media screen and (max-width: 1240px) {}
 
@@ -89,12 +87,13 @@ onMounted(() => {
     }
 
     .hero-contant-container {
-        padding: 24px;
+        padding: 40px 24px;
     }
 
     .hero-container h1 {
         max-width: 1300px;
-        margin-top: 26px;
+        margin-top: 0px;
+        margin-bottom: -10px;
     }
 
     .hero-container p {

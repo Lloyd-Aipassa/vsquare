@@ -102,7 +102,23 @@ li p {
     }
 }
 
-@media screen and (max-width: 1239px) {}
+@media screen and (max-width: 1239px) {
+    .header {
+        display: flex;
+        align-items: center;
+        padding: 0 96px;
+    }
+
+
+
+    ul {
+        gap: 20px;
+    }
+
+    li p {
+        font-size: 12px;
+    }
+}
 
 @media screen and (max-width: 720px) {
     .header {

@@ -68,7 +68,7 @@ const WhiteCard = [{
 }
 
 ul.bullets {
-    list-style-type: circle;
+    /* list-style-type: circle; */
     padding-left: 20px;
     margin: 24px 0 40px;
 }
@@ -167,12 +167,13 @@ ul.bullets p span {
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        margin-bottom: 200px;
     }
 
     #about-vegiatialan img {
         margin-right: 0px;
-        margin-bottom: -150px;
-        width: 100%;
+        margin-bottom: -450px;
+        width: 50%;
     }
 
     .mob {
@@ -195,17 +196,26 @@ ul.bullets p span {
         width: 100%;
     }
 
+    ul.bullets li:nth-child(1) {
+        margin-bottom: 1px;
+    }
+
+    ul.bullets li:nth-child(6) {
+        margin-bottom: -10px;
+    }
+
     /************** About vegiatialan ************/
 
     #about-vegiatialan {
         position: relative;
         height: 100%;
         background-color: #87B16D1A;
-        padding: 302px 24px 200px;
+        padding: 302px 24px 220px;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        margin-bottom: 0;
     }
 
     #about-vegiatialan img {
