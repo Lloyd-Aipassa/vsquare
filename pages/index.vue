@@ -257,7 +257,7 @@ onMounted(() => {
             trigger: '.woods',
         }
     })
-    tl3.fromTo('.animate-words', { opacity: '0', y: '100' }, { opacity: '1', y: '0', delay: 1.0, stagger: 0.3, duration: 1.3 });
+    tl3.fromTo('.animate-words', { opacity: '0', y: '100' }, { opacity: '1', y: '0', delay: 0.4, stagger: 0.3, duration: 1.3 });
 
 })
 
@@ -295,7 +295,7 @@ ul.bullets p {
     position: relative;
     padding: 80px 0 80px 80px;
     background: linear-gradient(266.72deg, #778171 0%, #8EA680 99.03%);
-    overflow-y: clip;
+    overflow-y: visible;
     overflow-x: visible;
 }
 
@@ -403,6 +403,7 @@ p.team-sub-title {
 
 .woods {
     background-image: url("/home/bos/Bos.webp");
+    background-repeat: no-repeat;
     padding: 130px 0 130px 200px;
     height: 100vh;
     position: relative;

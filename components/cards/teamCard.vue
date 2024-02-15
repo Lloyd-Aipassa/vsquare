@@ -68,8 +68,14 @@ const isOpen = ref(false)
     background-color: #77817100;
     color: #fff;
     font-size: 16px;
-    font-weight: 600;
+    font-weight: 300;
+    cursor: pointer;
+}
 
+.team-card-content button:hover {
+    gap: 20px;
+    font-weight: 600;
+    transition: all 200ms;
 }
 
 .root {
@@ -121,7 +127,6 @@ const isOpen = ref(false)
     color: var(--color-orange);
     padding: 0;
     text-align: left;
-
 }
 
 img.popup-img {

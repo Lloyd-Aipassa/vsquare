@@ -17,21 +17,24 @@
                             <input type="text" name="company" id="organisatie" required />
                             <label>Message</label>
                             <textarea rows="5" name="message"></textarea><br>
-                            <input type="submit" value="Verstuur" />
+                            <div class="button">
+                                <input type="submit" value="SEND" />
+                                <img src="/buttons/arrow.svg" alt="">
+                            </div>
                         </form>
                         <p v-if="verzonden"> Je bericht is verzonden :) </p>
                     </div>
                     <div class="cards">
                         <div class="card">
-                            <!-- <img src="/contact/adres.svg" width="46" height="56" alt=""> -->
+                            <img src="/contact/adres.svg" width="46" height="56" alt="">
                             <p>Keizersgracht 649 <br> 1017 DT Amsterdam</p>
                         </div>
                         <div class="card">
-                            <!-- <img src="/contact/tel.svg" width="46" height="56" alt=""> -->
+                            <img src="/contact/tel.svg" width="46" height="56" alt="">
                             <p>+31 63 02 61 684 <br><span>Monday to Friday 09:00 - 17:00</span></p>
                         </div>
                         <div class="card">
-                            <!-- <img src="/contact/envelop.svg" width="46" height="56" alt=""> -->
+                            <img src="/contact/envelop.svg" width="46" height="56" alt="">
                             <p>lucas@v-square.eu<br><span>Response within 24 hours.</span></p>
                         </div>
 
@@ -116,7 +119,7 @@ form input[type="text"],
 form input[type="email"],
 form textarea {
     width: 100%;
-    max-width: 500px;
+    max-width: 900px;
     border: 1px solid var(--color-light-green);
     /* border-radius: 3px; */
     padding: 14px;
@@ -125,22 +128,38 @@ form textarea {
     font-size: 16px;
 }
 
+.button {
+    margin-top: 15px;
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.button img {
+    position: absolute;
+    top: 50%;
+    right: 40px;
+}
+
 form input[type="submit"] {
+
     width: 30%;
     border: none;
-    padding: 15px;
+    padding: 15px 40px;
     box-sizing: border-box;
-    background-color: var(--color-orange);
+    background: var(--color-gradient);
     color: white;
     font-size: 16px;
     cursor: pointer;
     transition: all 0.3s ease;
     transform: translateY(0);
-    margin-top: 15px;
+    text-align: left;
+    margin: 15px 0 0 auto;
 }
 
 form input[type="submit"]:hover {
-    transform: translateY(-2px);
+    color: var(--color-light-green);
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
 }
 

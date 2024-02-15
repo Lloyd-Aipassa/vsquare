@@ -34,7 +34,8 @@ let tl = gsap.timeline();
 onMounted(() => {
 
     tl.to('.animate-right-left', { clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0 100%)' })
-        .to('.animatie-2', { clipPath: 'polygon(100% 0, 0 0, 0 100%, 100% 100%)', duration: 0.5, delay: 0.7, stagger: 1.5 })
+        .to('.animatie-2', { opacity: '1', duration: 0.5, delay: 0.7,  })
+    // .to('.animatie-2', { clipPath: 'polygon(100% 0, 0 0, 0 100%, 100% 100%)', duration: 0.5, delay: 0.7, stagger: 1.5 })
 })
 </script>
 
@@ -49,7 +50,8 @@ onMounted(() => {
 }
 
 .animatie-2 {
-    clip-path: polygon(100% 0, 0 0, 0 0, 100% 0);
+    opacity: 0;
+    /* clip-path: polygon(100% 0, 0 0, 0 0, 100% 0); */
     transition: all 1.5s;
 }
 

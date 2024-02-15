@@ -26,7 +26,7 @@ onMounted(() => {
             trigger: "#partners",
         }
     })
-        .fromTo('.partnercard', { opacity: '0', y: '60' }, { opacity: '1', y: '0', delay: 0.7, stagger: 0.4, duration: 1.3 });
+        .fromTo('.partnercard', { opacity: '0', y: '60' }, { opacity: '1', y: '0', delay: 0.4, stagger: 0.4, duration: 1.3 });
 })
 </script>
 
