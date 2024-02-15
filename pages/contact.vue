@@ -285,12 +285,17 @@ form input[type="submit"]:active {
 
 
     h1 {
-        font-size: 31px;
-        font-weight: 900;
-        line-height: 110%;
+
         max-width: 390px;
         margin-left: 24px;
+        margin-bottom: -10px;
         padding: 66px 0 24px;
+        font-family: Poppins;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 24px;
+        letter-spacing: 0em;
+        text-align: left;
     }
 
 
