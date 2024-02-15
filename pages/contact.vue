@@ -2,7 +2,7 @@
     <div>
         <section aria-label="Contact pagina">
             <div id="contact">
-                <h1>PREFER REAL CONTACT?</h1>
+                <h1>CONTACT?</h1>
                 <div class="contact-container">
                     <div class="form">
                         <form id="contact-form" ref="form" @submit.prevent="sendEmail">
