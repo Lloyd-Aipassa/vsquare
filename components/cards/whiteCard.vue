@@ -2,7 +2,9 @@
     <div class="card" v-for="(card, index) in WhiteCard" :key="index">
         <h2>{{ card.Title }}</h2>
         <p v-html="card.p"></p>
-        <ButtonsMainButton :ButtonTekst="ButtonTekst" :Link="Link" />
+        <div :class="{ active: isActive }">
+            <ButtonsMainButton :ButtonTekst="ButtonTekst" :Link="Link" />
+        </div>
     </div>
 </template>
 
@@ -10,11 +12,14 @@
 const props = defineProps({
     ButtonTekst: String,
     Link: String,
+    isActive: String,
     WhiteCard: {
         type: Array,
         required: true
     },
 })
+
+
 
 
 
@@ -67,6 +72,10 @@ ul {
     list-style-type: circle;
 }
 
+.active {
+    display: none;
+}
+
 @media screen and (max-width: 1240px) {
     .card {
         padding: 24px;
@@ -74,6 +83,7 @@ ul {
         box-shadow: 2px 4px 10px 0px #00000026;
     }
 }
+
 @media screen and (max-width: 720px) {
     .card {
         padding: 24px;

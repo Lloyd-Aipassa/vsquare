@@ -6,14 +6,15 @@
                     <li>
                         <p>There is a growing momentum for people to switch from animal-based to more sustainable,
                             plant-forward
-                            diets.To make this switch, most potential flexitarians need more and more tasty and conveniently
+                            diets.To make this switch, most potential flexitarians need more and more tasty and
+                            conveniently
                             available restaurants and deliverers to seduce them.</p>
                     </li>
                 </ul>
             </Hero>
         </section>
         <section class="vegitalian animatie-3">
-            <CardsWhiteCard :ButtonTekst="ButtonTekst2" :Link="Link2" :WhiteCard="WhiteCard" />
+            <CardsWhiteCard :ButtonTekst="ButtonTekst2" :Link="Link2" :WhiteCard="WhiteCard" :isActive="isActive" />
         </section>
         <section class="why-vsqaure">
             <div class="why-vsqaure-container">
@@ -25,7 +26,8 @@
                     </p>
                     <div class="why-vsqaure-img-text-container">
                         <img src="/home/whyVsquare/graph.svg" alt="">
-                        <p>Strong track record in scale up environments (e.g. Student Hotel) and management of hospitality
+                        <p>Strong track record in scale up environments (e.g. Student Hotel) and management of
+                            hospitality
                             and food-service brands</p>
                     </div>
                     <div class="why-vsqaure-img-text-container">
@@ -38,7 +40,8 @@
                     </div>
                     <div class="why-vsqaure-img-text-container">
                         <img src="/home/whyVsquare/handenschudden.svg" alt="">
-                        <p>Strong partnerships with Wageningen University and Sandenburg Concept Creation (that supported
+                        <p>Strong partnerships with Wageningen University and Sandenburg Concept Creation (that
+                            supported
                             a.o.: Tony Chocolonely, Stach, Landmarkt, Spar, Hema, Tosti Club)</p>
                     </div>
                     <div class="why-vsqaure-img-text-container">
@@ -79,7 +82,8 @@
         </div>
         <section id="smart-capital">
             <h2>SMART CAPITAL</h2>
-            <p class="sc-sub-title">V-SQUARE is an impact-driven collective that conjoins the required experience, manpower,
+            <p class="sc-sub-title">V-SQUARE is an impact-driven collective that conjoins the required experience,
+                manpower,
                 capital and
                 knowledge to firepower the scale up of Vegitalian
             </p>
@@ -90,7 +94,8 @@
                 </div>
                 <div class="sc-card">
                     <img src="/home/smartcapital/check2.svg" alt="">
-                    <p>Experienced in retail, food service, real estate, food & agri, industry, TIC and business services
+                    <p>Experienced in retail, food service, real estate, food & agri, industry, TIC and business
+                        services
                     </p>
                 </div>
                 <div class="sc-card">
@@ -163,6 +168,7 @@ const HeroContent = [{
 // ** White card button  **
 const ButtonTekst2 = 'More about vegitalian '
 const Link2 = '/vegitalian-project'
+const isActive = ref(true)
 
 // ** White card **
 const WhiteCard = [{
@@ -185,12 +191,12 @@ const cardTeam2 = [{
 
 const cardTeam3 = [{
     Name: "Markus Konings",
-    Image: "/home/team/Marcus.webp",
+    Image: "/home/team/Arjan.webp",
     p: 'Het FoodService Instituut Nederland (FSIN) is een onafhankelijk kennisplatform in de foodsector.',
 }]
 const cardTeam4 = [{
     Name: "Arjan Witteveen",
-    Image: "/home/team/Arjan.webp",
+    Image: "/home/team/Marcus.webp",
     p: 'Het FoodService Instituut Nederland (FSIN) is een onafhankelijk kennisplatform in de foodsector.',
 }]
 
