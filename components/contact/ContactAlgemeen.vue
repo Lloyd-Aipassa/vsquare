@@ -5,8 +5,8 @@
         <ContactBlock />
     </section>
 </template>
- 
- 
+
+
 <style scoped>
 #contact {
     display: flex;
@@ -19,7 +19,7 @@
     background: linear-gradient(266.72deg, #596651 0%, #899284 99.03%);
     padding: 72px;
     align-self: flex-start;
-    height: 450px;
+    height: 400px;
 }
 
 h2 {
