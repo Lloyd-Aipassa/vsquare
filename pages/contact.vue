@@ -285,7 +285,6 @@ form input[type="submit"]:active {
 
 
     h1 {
-
         max-width: 390px;
         margin-left: 24px;
         margin-bottom: -10px;

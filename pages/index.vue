@@ -167,7 +167,7 @@ const Link2 = '/vegitalian-project'
 // ** White card **
 const WhiteCard = [{
     Title: 'THE BEST HEALTHY AND SUSTAINABLE FOOD ON EVERY CORNER',
-    p: '<b>Current out of home (and to the home) options provide for sub-optimal offerings and lack scale, limiting their potential impact</b><br><br> V-SQUARE aims to invest in the high potential plant-forward restaurant chain Vegitalian and help it scale up faster and make its offering even healthier, tastier and more conveniently available at many more places. This way radically more people will be seduced to eat less and less animal-based food and as a result, we will have significant positive impact and can benefit from a huge market opportunity',
+    p: '<b>Current out of home (and to the home) options provide for sub-optimal offerings and lack scale, limiting their potential impact</b><br><br> V-SQUARE aims to invest in the high potential plant-forward restaurant chains and helps them scale up faster and makes their offering even healthier, tastier and more conveniently available at many more places. This way radically more people will be seduced to eat less and less animal-based food and as a result, we will have significant positive impact and can benefit from a huge market opportunity',
 }]
 
 // ** Team **
