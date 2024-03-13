@@ -66,7 +66,7 @@
             <div class="team">
                 <CardsTeamCard :cardTeam="cardTeam" />
                 <CardsTeamCard :cardTeam="cardTeam2" />
-                <CardsTeamCard :cardTeam="cardTeam3" />
+                <CardsTeamCard :cardTeam="cardTeam3" :isActive="isActive" />
                 <CardsTeamCard :cardTeam="cardTeam4" />
             </div>
         </section>
@@ -192,12 +192,12 @@ const cardTeam2 = [{
 const cardTeam3 = [{
     Name: "Markus Konings",
     Image: "/home/team/Arjan.webp",
-    p: 'Het FoodService Instituut Nederland (FSIN) is een onafhankelijk kennisplatform in de foodsector.',
+    p: 'In 1998 I founded Sandenburg Concept Creation. Sandenburg develops, designs and implements successful customer experiences for retail and foodservice clients and mixed-use projects.<br><br>Sandenburg works for entrepreneurial brands like Landmarkt, Eazie, Bagels & Beans and Tony’s Chocolonely. We also work for well-established brands like Hema, Spar, Albert Heijn, Vodafone, Ziggo, Unilever, Total, Lely, Athlon and Jacobs Douwe Egberts. Over recent years, we have devised and executed many appealing and relevant customer experience concepts together with our national and international clients, including businesses in the food- and retail sector, real estate and experience centres.<br><br>Early 2020 Sandenburg acquired ‘DST – het experience bureau’, an Amsterdam-based experience development and design agency, creating brand experience centres, visitor centres, themed attractions and educational projects. DST is well-known as the experience concept developer of Heineken Experience in Amsterdam.<br><br>As a serial investor, I invested over the last years in Mockamore, the Food Factory and On Top  (25+ locations food service concept), Amstel1, Holland Design & Gifts, Amstory and the award winning Umenz. In 2019 I attended the IESE Advanced Management Program, aiming at achieving visionary leadership and excellence in execution.<br><br>I am passionate about food innovation and have an extensive network in the food and retail business which will help to accelerate to develop a sustainable food concept. Further relevant experiences are operational management in food service, real estate and construction management.',
 }]
 const cardTeam4 = [{
     Name: "Arjan Witteveen",
     Image: "/home/team/Marcus.webp",
-    p: 'Het FoodService Instituut Nederland (FSIN) is een onafhankelijk kennisplatform in de foodsector.',
+    p: 'Over 37 years of experience in Finance of which >15 years as an entrepreneur and investor.<br><br>As a Certified public accountant I worked as a public auditor for KPMG, CFO for United Parcel Service Nederland, Douwe Egberts Coffee Systems and DPD Nederland BV, being responsible for Finance, ICT and Legal.<br><br>As an Investor I invested in several companies. Together with Markus we grew a food service business (Mockamore) with 25+  locations in the Benelux and Middle East. Other investments in retail chains in Poland and China, installation company, innovative LED light concept, international wholesale in home décor and gifts, wholesale in packaging and packaging machines, several buying companies in the Far East.<br><br>I supported companies in different phases as start-up, scale-up and turn-around. Daily financial management, process/result improvement and fund raising. The last 4 years I joined, as a Partner, a boutique in Corporate Finance and M&A<br><br>Key words: Entrepreneurial CFO, focus on results, move!, change, accountability, communication and fun!',
 }]
 
 // ** Parteners **

@@ -12,7 +12,7 @@
             <Teleport to="body">
                 <Transition>
                     <div class="modal" v-show="isOpen">
-                        <div class="popup">
+                        <div :class="{ biggerWidth: isActive }" class="popup">
                             <div class="name-image-container">
                                 <img img loading="lazy" :src="card.Image" class="popup-img" alt="Foto team">
                                 <p>{{ card.Name }}</p>
@@ -29,6 +29,7 @@
 
 <script setup>
 const props = defineProps({
+    isActive: String,
     cardTeam: {
         type: Array,
         required: true
@@ -107,6 +108,10 @@ const isOpen = ref(false)
     min-height: 300px;
     background-color: var(--color-green);
     border-radius: 8px;
+}
+
+.biggerWidth {
+    max-width: 1200px;
 }
 
 .name-image-container {
