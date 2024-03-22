@@ -12,7 +12,7 @@
             <Teleport to="body">
                 <Transition>
                     <div class="modal" v-show="isOpen">
-                        <div :class="{ biggerWidth: isActive }" class="popup">
+                        <div style="overflow-y: auto;" :class="{ biggerWidth: isActive }" class="popup">
                             <div class="name-image-container">
                                 <img img loading="lazy" :src="card.Image" class="popup-img" alt="Foto team">
                                 <p>{{ card.Name }}</p>
