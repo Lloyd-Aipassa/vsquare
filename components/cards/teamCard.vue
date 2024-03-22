@@ -12,7 +12,7 @@
             <Teleport to="body">
                 <Transition>
                     <div class="modal" v-show="isOpen">
-                        <div style="overflow-y: auto;" :class="{ biggerWidth: isActive }" class="popup">
+                        <div :class="{ biggerWidth: isActive }" class="popup">
                             <div class="name-image-container">
                                 <img img loading="lazy" :src="card.Image" class="popup-img" alt="Foto team">
                                 <p>{{ card.Name }}</p>
@@ -193,6 +193,8 @@ button.close:hover {
         background-color: rgba(0, 0, 0, 0.7);
         align-items: flex-start;
         padding-top: 20px;
+        padding-bottom: 20px;
+        overflow-y: scroll;
     }
 
     .popup {
@@ -200,8 +202,8 @@ button.close:hover {
         margin: 0 auto;
         overflow-y: scroll;
         padding: 24px;
-        padding-top: 275px;
-        height: 100%;
+
+
     }
 }
 
