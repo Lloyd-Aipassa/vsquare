@@ -108,6 +108,7 @@ const isOpen = ref(false)
     min-height: 300px;
     background-color: var(--color-green);
     border-radius: 8px;
+    overflow-y: auto;
 }
 
 .biggerWidth {
