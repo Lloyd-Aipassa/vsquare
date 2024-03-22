@@ -108,7 +108,6 @@ const isOpen = ref(false)
     min-height: 300px;
     background-color: var(--color-green);
     border-radius: 8px;
-    overflow-y: auto;
 }
 
 .biggerWidth {
@@ -196,12 +195,9 @@ button.close:hover {
     .popup {
         width: 90%;
         margin: 0 auto;
-    }
-
-    .popup {
+        overflow-y: scroll;
         padding: 24px;
     }
-
 }
 
 .v-enter-active,
