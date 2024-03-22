@@ -37,6 +37,7 @@ const props = defineProps({
 })
 
 const isOpen = ref(false)
+
 </script>
 
 <style scoped>
@@ -191,7 +192,7 @@ button.close:hover {
     .modal {
         background-color: rgba(0, 0, 0, 0.7);
         align-items: flex-start;
-        padding-top: 50px;
+        padding-top: 20px;
     }
 
     .popup {
@@ -199,7 +200,7 @@ button.close:hover {
         margin: 0 auto;
         overflow-y: scroll;
         padding: 24px;
-        height: 90%;
+        min-height: 100%;
     }
 }
 
