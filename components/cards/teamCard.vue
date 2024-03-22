@@ -200,7 +200,8 @@ button.close:hover {
         margin: 0 auto;
         overflow-y: scroll;
         padding: 24px;
-        min-height: 100%;
+        padding-top: 275px;
+        height: 100%;
     }
 }
 
