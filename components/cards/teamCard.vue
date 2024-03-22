@@ -190,6 +190,8 @@ button.close:hover {
 
     .modal {
         background-color: rgba(0, 0, 0, 0.7);
+        align-items: flex-start;
+        padding-top: 50px;
     }
 
     .popup {
