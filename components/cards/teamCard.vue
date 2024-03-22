@@ -199,6 +199,7 @@ button.close:hover {
         margin: 0 auto;
         overflow-y: scroll;
         padding: 24px;
+        height: 90%;
     }
 }
 
